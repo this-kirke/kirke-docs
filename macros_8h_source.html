@@ -98,24 +98,35 @@ $(document).ready(function(){initNavTree('macros_8h_source.html',''); initResiza
 <div class="title">macros.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef KIRKE__MACROS__H</span></div>
+<a href="macros_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef KIRKE__MACROS__H</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define KIRKE__MACROS__H</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">    #define BEGIN_DECLARATIONS extern &quot;C&quot; {</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">    #define END_DECLARATIONS }</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">    #define BEGIN_DECLARATIONS</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">    #define END_DECLARATIONS</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#endif // __cplusplus</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#endif // KIRKE__MACROS__H</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">    #define BEGIN_DECLARATIONS extern &quot;C&quot; {</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">    #define END_DECLARATIONS }</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="group__macros.html#ga1ad439e9f499b2b90643d1d562aeeed0">   27</a></span>&#160;<span class="preprocessor">    #define BEGIN_DECLARATIONS</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="group__macros.html#gaa21dd583b601bd8d3bf9b30e1000f938">   28</a></span>&#160;<span class="preprocessor">    #define END_DECLARATIONS</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#endif // __cplusplus</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="group__macros.html#ga92f2ca48072dedf5528253dab5139d94">   36</a></span>&#160;<span class="preprocessor">#define ELEMENT_COUNT( array ) ( sizeof( array ) / sizeof( ( array )[ 0 ] ) )</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#ifndef NULL</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="group__macros.html#ga070d2ce7b6bb7e5c05602aa8c308d0c4">   43</a></span>&#160;<span class="preprocessor">    #define NULL (void*) 0</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment"> *  @} group macros</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment"> *  @} group kirke</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#endif // KIRKE__MACROS__H</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="dir_b5742e8d6a24b10528c0fa90cb15c6be.html">kirke</a></li><li class="navelem"><a class="el" href="dir_c9835e7ac4a1472b63da0323d17bbfb2.html">include</a></li><li class="navelem"><a class="el" href="dir_7ba00f72a65cfc1aa440db57e384ca6a.html">kirke</a></li><li class="navelem"><b>macros.h</b></li>
+    <li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="dir_b5742e8d6a24b10528c0fa90cb15c6be.html">kirke</a></li><li class="navelem"><a class="el" href="dir_c9835e7ac4a1472b63da0323d17bbfb2.html">include</a></li><li class="navelem"><a class="el" href="dir_7ba00f72a65cfc1aa440db57e384ca6a.html">kirke</a></li><li class="navelem"><a class="el" href="macros_8h.html">macros.h</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
