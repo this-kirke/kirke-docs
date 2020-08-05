@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['kirke_5',['Kirke',['../group__kirke.html',1,'']]]
+  ['data_23',['data',['../group__slice.html#ga0a34cdb3a48c2d71b36e6c8bdbb02a4f',1,'Slice']]]
 ];

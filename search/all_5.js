@@ -1,7 +1,4 @@
 var searchData=
 [
-  ['macros_7',['Macros',['../group__macros.html',1,'']]],
-  ['macros_2eh_8',['macros.h',['../macros_8h.html',1,'']]],
-  ['math_9',['Math',['../group__math.html',1,'']]],
-  ['math_2eh_10',['math.h',['../math_8h.html',1,'']]]
+  ['freefunction_27',['FreeFunction',['../group__slice.html#ga8631dfab6497698b91b9f1f29634bf91',1,'slice.h']]]
 ];

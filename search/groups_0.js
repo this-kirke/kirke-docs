@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['kirke_15',['Kirke',['../group__kirke.html',1,'']]]
+  ['allocator_110',['Allocator',['../group__allocator.html',1,'']]],
+  ['autoslice_111',['AutoSlice',['../group__auto__slice.html',1,'']]]
 ];

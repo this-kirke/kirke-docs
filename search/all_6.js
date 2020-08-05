@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['null_11',['NULL',['../group__macros.html#ga070d2ce7b6bb7e5c05602aa8c308d0c4',1,'macros.h']]]
+  ['length_28',['length',['../group__slice.html#ga1e786827d9d28606670077c37a126791',1,'Slice']]],
+  ['license_29',['License',['../license.html',1,'index']]]
 ];
