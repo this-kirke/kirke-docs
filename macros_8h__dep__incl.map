@@ -1,7 +1,7 @@
 <map id="lib/kirke/include/kirke/macros.h" name="lib/kirke/include/kirke/macros.h">
 <area shape="rect" id="node1" title=" " alt="" coords="175,5,336,47"/>
 <area shape="rect" id="node2" href="$allocator_8h.html" title=" " alt="" coords="5,95,167,136"/>
-<area shape="rect" id="node3" href="$system__allocator_8h_source.html" title=" " alt="" coords="64,184,225,225"/>
+<area shape="rect" id="node3" href="$system__allocator_8h.html" title=" " alt="" coords="64,184,225,225"/>
 <area shape="rect" id="node4" href="$auto__slice_8h.html" title=" " alt="" coords="364,184,525,225"/>
 <area shape="rect" id="node5" href="$math_8h.html" title=" " alt="" coords="293,95,455,136"/>
 <area shape="rect" id="node6" href="$slice_8h.html" title=" " alt="" coords="479,95,640,136"/>
