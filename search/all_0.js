@@ -1,7 +1,7 @@
 var searchData=
 [
   ['about_0',['About',['../about.html',1,'index']]],
-  ['allocator_1',['Allocator',['../structAllocator.html',1,'Allocator'],['../group__auto__slice.html#ga2216d45d2157063e8bffc3b79db45899',1,'AutoSlice::allocator()'],['../group__math.html#ga833f05a3680babaf68fe2a2fcc159498',1,'SystemAllocator::allocator()'],['../group__allocator.html#ga3da4ea908371040297c1c6fe756252ce',1,'Allocator():&#160;allocator.h'],['../group__allocator.html',1,'(Global Namespace)']]],
+  ['allocator_1',['Allocator',['../structAllocator.html',1,'Allocator'],['../group__auto__slice.html#ga2216d45d2157063e8bffc3b79db45899',1,'AutoSlice::allocator()'],['../group__system__allocator.html#ga833f05a3680babaf68fe2a2fcc159498',1,'SystemAllocator::allocator()'],['../group__allocator.html#ga3da4ea908371040297c1c6fe756252ce',1,'Allocator():&#160;allocator.h'],['../group__allocator.html',1,'(Global Namespace)']]],
   ['allocator_2eh_2',['allocator.h',['../allocator_8h.html',1,'']]],
   ['allocator_5f_5falloc_3',['allocator__alloc',['../group__allocator.html#ga1f9b14ced7eda680ab101eabb23ace76',1,'allocator__alloc(Allocator *allocator, unsigned long long size):&#160;allocator.c'],['../group__allocator.html#ga1f9b14ced7eda680ab101eabb23ace76',1,'allocator__alloc(Allocator *allocator, unsigned long long size):&#160;allocator.c']]],
   ['allocator_5f_5fcalloc_4',['allocator__calloc',['../group__allocator.html#gac112efc3c04aa57b566db3435f751eac',1,'allocator__calloc(Allocator *allocator, unsigned long long count, unsigned long long size):&#160;allocator.c'],['../group__allocator.html#gac112efc3c04aa57b566db3435f751eac',1,'allocator__calloc(Allocator *allocator, unsigned long long count, unsigned long long size):&#160;allocator.c']]],

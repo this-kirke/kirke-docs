@@ -95,20 +95,12 @@ $(document).ready(function(){initNavTree('group__math.html',''); initResizable()
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Data Structures</a> &#124;
-<a href="#func-members">Functions</a> &#124;
-<a href="#var-members">Variables</a>  </div>
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">Math</div>  </div>
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Data Structures</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSystemAllocator.html">SystemAllocator</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An allocator which uses the system's malloc, realloc and free methods. This allocator checks for out of memory errors (when malloc or realloc returns NULL), and calls an optional callback if this occurs.  <a href="structSystemAllocator.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ga617f4cd45bbfb629ec87819d34aa4118"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__macros.html#ga1ad439e9f499b2b90643d1d562aeeed0">BEGIN_DECLARATIONS</a> long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__math.html#ga617f4cd45bbfb629ec87819d34aa4118">math__min__long</a> (long first, long second)</td></tr>
@@ -132,17 +124,6 @@ Functions</h2></td></tr>
 <tr class="memitem:gae841602d22068691fbb7bcedcb3aaf1e"><td class="memItemLeft" align="right" valign="top">unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__math.html#gae841602d22068691fbb7bcedcb3aaf1e">math__nearest_greater_power_of_2__ulong</a> (unsigned long value)</td></tr>
 <tr class="memdesc:gae841602d22068691fbb7bcedcb3aaf1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method calculates and returns the next greater power of 2 for a given value.  <a href="group__math.html#gae841602d22068691fbb7bcedcb3aaf1e">More...</a><br /></td></tr>
 <tr class="separator:gae841602d22068691fbb7bcedcb3aaf1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5a731aa76aa1df2a7b62b1db4d78c658"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__math.html#ga5a731aa76aa1df2a7b62b1db4d78c658">system_allocator__init</a> (<a class="el" href="structSystemAllocator.html">SystemAllocator</a> *system_allocator, void(*out_of_memory_callback)(void))</td></tr>
-<tr class="separator:ga5a731aa76aa1df2a7b62b1db4d78c658"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga47b821020fd50fb391773455ff7407b5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__math.html#ga47b821020fd50fb391773455ff7407b5">system_allocator__deinit</a> (<a class="el" href="structSystemAllocator.html">SystemAllocator</a> *system_allocator)</td></tr>
-<tr class="separator:ga47b821020fd50fb391773455ff7407b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:ga833f05a3680babaf68fe2a2fcc159498"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structAllocator.html">Allocator</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__math.html#ga833f05a3680babaf68fe2a2fcc159498">SystemAllocator::allocator</a></td></tr>
-<tr class="separator:ga833f05a3680babaf68fe2a2fcc159498"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga249570ab1149c44a212c00f418dee3b6"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__math.html#ga249570ab1149c44a212c00f418dee3b6">SystemAllocator::out_of_memory_callback</a> )(void)</td></tr>
-<tr class="separator:ga249570ab1149c44a212c00f418dee3b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <h2 class="groupheader">Function Documentation</h2>
@@ -392,97 +373,6 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 <dl class="section note"><dt>Note</dt><dd>If the value itself is a power of 2, this method still returns the next greater power of 2. For example, math__nearest_greater_power_of_2__ulong( 2 ) == 4. </dd></dl>
-
-</div>
-</div>
-<a id="ga47b821020fd50fb391773455ff7407b5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga47b821020fd50fb391773455ff7407b5">&#9670;&nbsp;</a></span>system_allocator__deinit()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void system_allocator__deinit </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structSystemAllocator.html">SystemAllocator</a> *&#160;</td>
-          <td class="paramname"><em>system_allocator</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>De-initializes a <a class="el" href="structSystemAllocator.html" title="An allocator which uses the system&#39;s malloc, realloc and free methods. This allocator checks for out ...">SystemAllocator</a> structure. This must be called when finished with a <a class="el" href="structSystemAllocator.html" title="An allocator which uses the system&#39;s malloc, realloc and free methods. This allocator checks for out ...">SystemAllocator</a> initialized with system_allocator__init. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">system_allocator</td><td>A pointer to the <a class="el" href="structSystemAllocator.html" title="An allocator which uses the system&#39;s malloc, realloc and free methods. This allocator checks for out ...">SystemAllocator</a> structure to be de-initialized. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section note"><dt>Note</dt><dd>Internally this calls allocator__free on <a class="el" href="group__allocator.html">Allocator</a>, so failing to call this method will leak memory. </dd></dl>
-
-</div>
-</div>
-<a id="ga5a731aa76aa1df2a7b62b1db4d78c658"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga5a731aa76aa1df2a7b62b1db4d78c658">&#9670;&nbsp;</a></span>system_allocator__init()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void system_allocator__init </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structSystemAllocator.html">SystemAllocator</a> *&#160;</td>
-          <td class="paramname"><em>system_allocator</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void(*)(void)&#160;</td>
-          <td class="paramname"><em>out_of_memory_callback</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Initializes a <a class="el" href="structSystemAllocator.html" title="An allocator which uses the system&#39;s malloc, realloc and free methods. This allocator checks for out ...">SystemAllocator</a> structure. The <a class="el" href="structSystemAllocator.html" title="An allocator which uses the system&#39;s malloc, realloc and free methods. This allocator checks for out ...">SystemAllocator</a> structure contains an <a class="el" href="group__allocator.html">Allocator</a> field which can be passed to any method taking an Allocator* parameter. This allocator is a vtable which points to the system's malloc, realloc and free methods. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">system_allocator</td><td>A pointer to the <a class="el" href="structSystemAllocator.html" title="An allocator which uses the system&#39;s malloc, realloc and free methods. This allocator checks for out ...">SystemAllocator</a> to be initialized. </td></tr>
-    <tr><td class="paramname">out_of_memory_callback</td><td>An optional method which will be called if alloc or realloc return NULL, i.e. an out of memory condition occurred. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<h2 class="groupheader">Variable Documentation</h2>
-<a id="ga833f05a3680babaf68fe2a2fcc159498"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga833f05a3680babaf68fe2a2fcc159498">&#9670;&nbsp;</a></span>allocator</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structAllocator.html">Allocator</a>* SystemAllocator::allocator</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>The initialzed allocator, which can be passed to any method requiring an allocator parameter. </p>
-
-</div>
-</div>
-<a id="ga249570ab1149c44a212c00f418dee3b6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga249570ab1149c44a212c00f418dee3b6">&#9670;&nbsp;</a></span>out_of_memory_callback</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void( * SystemAllocator::out_of_memory_callback) (void)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>An optional callback, specified in system_allocator__init, which will be called in case of out of memory errors. </p>
 
 </div>
 </div>
