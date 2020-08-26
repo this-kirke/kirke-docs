@@ -3,11 +3,11 @@ var indexSectionsWithContent =
   0: "abcdeilmnors",
   1: "aes",
   2: "aeilms",
-  3: "aelms",
+  3: "aeilms",
   4: "acdelos",
   5: "a",
-  6: "l",
-  7: "l",
+  6: "il",
+  7: "il",
   8: "aeilms",
   9: "al"
 };

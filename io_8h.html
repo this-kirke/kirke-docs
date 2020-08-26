@@ -96,6 +96,7 @@ $(document).ready(function(){initNavTree('io_8h.html',''); initResizable(); });
 <div class="header">
   <div class="summary">
 <a href="#typedef-members">Typedefs</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">io.h File Reference</div>  </div>
@@ -120,16 +121,23 @@ Typedefs</h2></td></tr>
 typedef typedefBEGIN_DECLARATIONS struct <a class="el" href="structAllocator.html">Allocator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Allocator</b></td></tr>
 <tr class="separator:a76ee1dc9907b0baa09a6ca1e15fe9a00"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:gaaf6053bd62e90ef9bce3563121345c4d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__io.html#gaaf6053bd62e90ef9bce3563121345c4d">IO__Error</a> { <a class="el" href="group__io.html#ggaaf6053bd62e90ef9bce3563121345c4dabe168a907fad535d639ef615c44d044d">IO__Error__UnableToOpenFile</a>
+ }</td></tr>
+<tr class="memdesc:gaaf6053bd62e90ef9bce3563121345c4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">This enumerator defines possible <a class="el" href="structError.html">Error</a> types for IO functions.  <a href="group__io.html#gaaf6053bd62e90ef9bce3563121345c4d">More...</a><br /></td></tr>
+<tr class="separator:gaaf6053bd62e90ef9bce3563121345c4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gac0dab2f946561c9def19e646bf18436f"><td class="memItemLeft" align="right" valign="top">
-long long&#160;</td><td class="memItemRight" valign="bottom"><b>io__format_maximum_size</b> (const char *const format, va_list args)</td></tr>
-<tr class="separator:gac0dab2f946561c9def19e646bf18436f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga62eeb15d0e8b28a1db31ee39e0ab48f2"><td class="memItemLeft" align="right" valign="top">
-<a class="el" href="structSlice.html">Slice</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>io__read_file</b> (<a class="el" href="structAllocator.html">Allocator</a> *allocator, <a class="el" href="structSlice.html">Slice</a> *file_path)</td></tr>
-<tr class="separator:ga62eeb15d0e8b28a1db31ee39e0ab48f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga82f28d39b0df55bf6a77ef62ec017ece"><td class="memItemLeft" align="right" valign="top">
-<a class="el" href="structSlice.html">Slice</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>io__read_stdin</b> (<a class="el" href="structAllocator.html">Allocator</a> *allocator)</td></tr>
+<tr class="memitem:ga4f3e33574b80ac8017a55b8b97f04ac7"><td class="memItemLeft" align="right" valign="top">long long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__io.html#ga4f3e33574b80ac8017a55b8b97f04ac7">io__calculate_format_size</a> (const char *const format, va_list args)</td></tr>
+<tr class="memdesc:ga4f3e33574b80ac8017a55b8b97f04ac7"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method calculates the size in bytes of the resulting string after the format specifier and arguments have been evaluated.  <a href="group__io.html#ga4f3e33574b80ac8017a55b8b97f04ac7">More...</a><br /></td></tr>
+<tr class="separator:ga4f3e33574b80ac8017a55b8b97f04ac7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae7a4f53efd194f0255106b45ce4b0671"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structSlice.html">Slice</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__io.html#gae7a4f53efd194f0255106b45ce4b0671">io__read_file</a> (<a class="el" href="structAllocator.html">Allocator</a> *allocator, <a class="el" href="structSlice.html">Slice</a> *file_path, <a class="el" href="structError.html">Error</a> **error)</td></tr>
+<tr class="memdesc:gae7a4f53efd194f0255106b45ce4b0671"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method reads the contents of the file located at <code>file_path</code> into a newly-allocated <a class="el" href="structSlice.html">Slice</a>.  <a href="group__io.html#gae7a4f53efd194f0255106b45ce4b0671">More...</a><br /></td></tr>
+<tr class="separator:gae7a4f53efd194f0255106b45ce4b0671"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga82f28d39b0df55bf6a77ef62ec017ece"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structSlice.html">Slice</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__io.html#ga82f28d39b0df55bf6a77ef62ec017ece">io__read_stdin</a> (<a class="el" href="structAllocator.html">Allocator</a> *allocator)</td></tr>
+<tr class="memdesc:ga82f28d39b0df55bf6a77ef62ec017ece"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method reads the contents of stdin into a newly-allocated <a class="el" href="structSlice.html">Slice</a>.  <a href="group__io.html#ga82f28d39b0df55bf6a77ef62ec017ece">More...</a><br /></td></tr>
 <tr class="separator:ga82f28d39b0df55bf6a77ef62ec017ece"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->

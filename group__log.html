@@ -121,6 +121,8 @@ Macros</h2></td></tr>
 <tr class="memitem:ga1ced8135accd831ae0191a33e2d5120e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__log.html#ga1ced8135accd831ae0191a33e2d5120e">log__error</a>(...)&#160;&#160;&#160;<a class="el" href="group__log.html#ga110d61829c86cf3089f1ffd764cd8daf">log__log</a>( <a class="el" href="group__log.html#ggad557bc5915d8a3ccb046ebd386fa2e8eadbe0ac5b069d914e985d26af89c1174e">Log__Level__Error</a>, __FILE__, __LINE__, __VA_ARGS__ )</td></tr>
 <tr class="memdesc:ga1ced8135accd831ae0191a33e2d5120e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convenience macro to log a message with Log__Level__Error severity.  <a href="group__log.html#ga1ced8135accd831ae0191a33e2d5120e">More...</a><br /></td></tr>
 <tr class="separator:ga1ced8135accd831ae0191a33e2d5120e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga321058fc9e9a3d0b59d4efa0562ee7af"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>log__throw_fatal_error</b>(error_pointer)</td></tr>
+<tr class="separator:ga321058fc9e9a3d0b59d4efa0562ee7af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -211,6 +213,27 @@ Functions</h2></td></tr>
 <p>Convenience macro to log a message with Log__Level__Info severity. </p>
 <dl class="section note"><dt>Note</dt><dd>Contents of <b>VA_ARGS</b> parameter should be a C-style string with format specifiers, followed by a list of variables corresponding to the format specifiers in the string. </dd></dl>
 
+</div>
+</div>
+<a id="ga321058fc9e9a3d0b59d4efa0562ee7af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga321058fc9e9a3d0b59d4efa0562ee7af">&#9670;&nbsp;</a></span>log__throw_fatal_error</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define log__throw_fatal_error</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">error_pointer</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">    <a class="code" href="group__log.html#ga1ced8135accd831ae0191a33e2d5120e">log__error</a>( <span class="stringliteral">&quot;%s&quot;</span>, <a class="code" href="group__slice.html#ga1fbe3f1d4df19060519793abe4eddb99">slice__data</a>( &amp;( error_pointer )-&gt;message, <span class="keywordtype">char</span> ) );   \</div>
+<div class="line">    error__free( ( error_pointer ) );                                       \</div>
+<div class="line">    exit( EXIT_FAILURE );</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="gabce327c558b6f4510f27d92de74aa97a"></a>
@@ -397,6 +420,8 @@ Functions</h2></td></tr>
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="agroup__slice_html_ga1fbe3f1d4df19060519793abe4eddb99"><div class="ttname"><a href="group__slice.html#ga1fbe3f1d4df19060519793abe4eddb99">slice__data</a></div><div class="ttdeci">#define slice__data(SLICE_PTR, TYPE)</div><div class="ttdoc">Retrieves a pointer to the underlying data of the specified Slice.</div><div class="ttdef"><b>Definition:</b> slice.h:78</div></div>
+<div class="ttc" id="agroup__log_html_ga1ced8135accd831ae0191a33e2d5120e"><div class="ttname"><a href="group__log.html#ga1ced8135accd831ae0191a33e2d5120e">log__error</a></div><div class="ttdeci">#define log__error(...)</div><div class="ttdoc">Convenience macro to log a message with Log__Level__Error severity.</div><div class="ttdef"><b>Definition:</b> log.h:89</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

@@ -106,16 +106,20 @@ $(document).ready(function(){initNavTree('log_8h.html',''); initResizable(); });
 <code>#include &lt;stdio.h&gt;</code><br />
 <code>#include &lt;stdlib.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="macros_8h_source.html">kirke/macros.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="error_8h_source.html">kirke/error.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for log.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="log_8h__incl.png" border="0" usemap="#lib_2kirke_2include_2kirke_2log_8h" alt=""/></div>
 <map name="lib_2kirke_2include_2kirke_2log_8h" id="lib_2kirke_2include_2kirke_2log_8h">
-<area shape="rect" title=" " alt="" coords="103,5,265,47"/>
-<area shape="rect" title=" " alt="" coords="5,95,80,121"/>
-<area shape="rect" title=" " alt="" coords="104,95,171,121"/>
-<area shape="rect" title=" " alt="" coords="195,95,266,121"/>
-<area shape="rect" href="macros_8h.html" title=" " alt="" coords="290,95,409,121"/>
+<area shape="rect" title=" " alt="" coords="76,5,237,47"/>
+<area shape="rect" title=" " alt="" coords="325,244,399,271"/>
+<area shape="rect" title=" " alt="" coords="30,95,97,121"/>
+<area shape="rect" title=" " alt="" coords="121,95,192,121"/>
+<area shape="rect" href="macros_8h.html" title=" " alt="" coords="76,244,195,271"/>
+<area shape="rect" href="error_8h.html" title=" " alt="" coords="216,95,316,121"/>
+<area shape="rect" href="allocator_8h.html" title=" " alt="" coords="21,169,148,196"/>
+<area shape="rect" href="slice_8h.html" title=" " alt="" coords="224,169,324,196"/>
 </map>
 </div>
 </div>
@@ -138,6 +142,8 @@ Macros</h2></td></tr>
 <tr class="memitem:ga1ced8135accd831ae0191a33e2d5120e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__log.html#ga1ced8135accd831ae0191a33e2d5120e">log__error</a>(...)&#160;&#160;&#160;<a class="el" href="group__log.html#ga110d61829c86cf3089f1ffd764cd8daf">log__log</a>( <a class="el" href="group__log.html#ggad557bc5915d8a3ccb046ebd386fa2e8eadbe0ac5b069d914e985d26af89c1174e">Log__Level__Error</a>, __FILE__, __LINE__, __VA_ARGS__ )</td></tr>
 <tr class="memdesc:ga1ced8135accd831ae0191a33e2d5120e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convenience macro to log a message with Log__Level__Error severity.  <a href="group__log.html#ga1ced8135accd831ae0191a33e2d5120e">More...</a><br /></td></tr>
 <tr class="separator:ga1ced8135accd831ae0191a33e2d5120e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga321058fc9e9a3d0b59d4efa0562ee7af"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>log__throw_fatal_error</b>(error_pointer)</td></tr>
+<tr class="separator:ga321058fc9e9a3d0b59d4efa0562ee7af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
