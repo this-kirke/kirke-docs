@@ -17,6 +17,7 @@ var group__slice =
     [ "slice__init__format", "group__slice.html#ga559247ecdbca754c80f63e82605e1657", null ],
     [ "slice__init__full", "group__slice.html#gae8da4b733ddfaef014526d29a4ea7eb4", null ],
     [ "slice__init__va_list", "group__slice.html#gadc0dfdc0a64a685f6d09ed5258126f5f", null ],
+    [ "slice__start_index_of_first_occurrence", "group__slice.html#gac3c72cf500a937a2117adc7ccbec35f0", null ],
     [ "capacity", "group__slice.html#ga645bb2df2be09597f82bce0d9754f814", null ],
     [ "data", "group__slice.html#ga0a34cdb3a48c2d71b36e6c8bdbb02a4f", null ],
     [ "element_size", "group__slice.html#ga47f70e894d1912ac46222d38d82045dc", null ],
