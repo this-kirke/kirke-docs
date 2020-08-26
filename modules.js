@@ -8,5 +8,6 @@ var modules =
     [ "Macros", "group__macros.html", "group__macros" ],
     [ "Math", "group__math.html", "group__math" ],
     [ "Slice", "group__slice.html", "group__slice" ],
+    [ "SplitIterator", "group__split__iterator.html", "group__split__iterator" ],
     [ "SystemAllocator", "group__system__allocator.html", "group__system__allocator" ]
 ];

@@ -97,7 +97,7 @@ $(document).ready(function(){initNavTree('structSplitIterator.html',''); initRes
   <div class="summary">
 <a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle">
-<div class="title">SplitIterator Struct Reference</div>  </div>
+<div class="title">SplitIterator Struct Reference<div class="ingroups"><a class="el" href="group__split__iterator.html">SplitIterator</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -117,62 +117,16 @@ Collaboration diagram for SplitIterator:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a5244eac23ca1f170ccd21478d66eec15"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structSlice.html">Slice</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSplitIterator.html#a5244eac23ca1f170ccd21478d66eec15">slice</a></td></tr>
-<tr class="separator:a5244eac23ca1f170ccd21478d66eec15"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae0db7e1a1bbe81607c9381f71d4c8ed6"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structSlice.html">Slice</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSplitIterator.html#ae0db7e1a1bbe81607c9381f71d4c8ed6">delimiter</a></td></tr>
-<tr class="separator:ae0db7e1a1bbe81607c9381f71d4c8ed6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a211b17992d6f33708aa5905c6d4399f2"><td class="memItemLeft" align="right" valign="top">unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSplitIterator.html#a211b17992d6f33708aa5905c6d4399f2">position</a></td></tr>
-<tr class="separator:a211b17992d6f33708aa5905c6d4399f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5244eac23ca1f170ccd21478d66eec15"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structSlice.html">Slice</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__split__iterator.html#ga5244eac23ca1f170ccd21478d66eec15">slice</a></td></tr>
+<tr class="separator:ga5244eac23ca1f170ccd21478d66eec15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae0db7e1a1bbe81607c9381f71d4c8ed6"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structSlice.html">Slice</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__split__iterator.html#gae0db7e1a1bbe81607c9381f71d4c8ed6">delimiter</a></td></tr>
+<tr class="separator:gae0db7e1a1bbe81607c9381f71d4c8ed6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga211b17992d6f33708aa5905c6d4399f2"><td class="memItemLeft" align="right" valign="top">unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__split__iterator.html#ga211b17992d6f33708aa5905c6d4399f2">position</a></td></tr>
+<tr class="separator:ga211b17992d6f33708aa5905c6d4399f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This is a type which captures state for a split iterator. A split iterator splits a <a class="el" href="structSlice.html">Slice</a> into component Slices - tokens - which are separated by a delimiter. Delimiters can be multiple elements long. </p>
-</div><h2 class="groupheader">Field Documentation</h2>
-<a id="ae0db7e1a1bbe81607c9381f71d4c8ed6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae0db7e1a1bbe81607c9381f71d4c8ed6">&#9670;&nbsp;</a></span>delimiter</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="structSlice.html">Slice</a>* SplitIterator::delimiter</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>A pointer to a <a class="el" href="structSlice.html">Slice</a> which represents the delimiter used to split tokens from the parent <a class="el" href="structSlice.html">Slice</a>. </p>
-
-</div>
-</div>
-<a id="a211b17992d6f33708aa5905c6d4399f2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a211b17992d6f33708aa5905c6d4399f2">&#9670;&nbsp;</a></span>position</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">unsigned long SplitIterator::position</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>The current position of the iterator, in elements. This is incremented by split_iterator__next to reference to the element following the last-found delimiter. </p>
-
-</div>
-</div>
-<a id="a5244eac23ca1f170ccd21478d66eec15"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5244eac23ca1f170ccd21478d66eec15">&#9670;&nbsp;</a></span>slice</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="structSlice.html">Slice</a>* SplitIterator::slice</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>A pointer to the parent <a class="el" href="structSlice.html">Slice</a>, containing both tokens and delimiters </p>
-
-</div>
-</div>
-<hr/>The documentation for this struct was generated from the following file:<ul>
+</div><hr/>The documentation for this struct was generated from the following file:<ul>
 <li>lib/kirke/include/kirke/<a class="el" href="split__iterator_8h_source.html">split_iterator.h</a></li>
 </ul>
 </div><!-- contents -->
