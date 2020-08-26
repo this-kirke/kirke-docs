@@ -97,7 +97,6 @@ $(document).ready(function(){initNavTree('group__slice.html',''); initResizable(
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
 <a href="#define-members">Macros</a> &#124;
-<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
@@ -112,12 +111,6 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:ga3ed762baf4d14e341609a5e392c3332c"><td class="memItemLeft" align="right" valign="top"><a id="ga3ed762baf4d14e341609a5e392c3332c"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>slice__default</b>&#160;&#160;&#160;(<a class="el" href="structSlice.html">Slice</a>) { 0 }</td></tr>
-<tr class="separator:ga3ed762baf4d14e341609a5e392c3332c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gadebf28cefce13ca6ed1144058972028f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__slice.html#gadebf28cefce13ca6ed1144058972028f">slice__init</a>(DATA,  LENGTH,  ELEMENT_SIZE)&#160;&#160;&#160;(<a class="el" href="structSlice.html">Slice</a>) { .data = (void*) (DATA), .length = (LENGTH), .capacity = LENGTH, .element_size = (ELEMENT_SIZE) }</td></tr>
-<tr class="memdesc:gadebf28cefce13ca6ed1144058972028f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fully initialize a slice with an array of known length.  <a href="group__slice.html#gadebf28cefce13ca6ed1144058972028f">More...</a><br /></td></tr>
-<tr class="separator:gadebf28cefce13ca6ed1144058972028f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad140dc32da9d1ef1fa62c7c165f2e46f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__slice.html#gad140dc32da9d1ef1fa62c7c165f2e46f">slice__from_array</a>(ARRAY)&#160;&#160;&#160;(<a class="el" href="structSlice.html">Slice</a>) { .data = (void*) (ARRAY), .length = <a class="el" href="group__macros.html#ga92f2ca48072dedf5528253dab5139d94">ELEMENT_COUNT</a>( (ARRAY) ), .capacity = <a class="el" href="group__macros.html#ga92f2ca48072dedf5528253dab5139d94">ELEMENT_COUNT</a>( (ARRAY) ), .element_size = sizeof( (ARRAY)[ 0 ] ) }</td></tr>
 <tr class="memdesc:gad140dc32da9d1ef1fa62c7c165f2e46f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a slice from a stack-allocated array.  <a href="group__slice.html#gad140dc32da9d1ef1fa62c7c165f2e46f">More...</a><br /></td></tr>
 <tr class="separator:gad140dc32da9d1ef1fa62c7c165f2e46f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -131,35 +124,29 @@ Macros</h2></td></tr>
 <tr class="memdesc:ga1fbe3f1d4df19060519793abe4eddb99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves a pointer to the underlying data of the specified <a class="el" href="structSlice.html">Slice</a>.  <a href="group__slice.html#ga1fbe3f1d4df19060519793abe4eddb99">More...</a><br /></td></tr>
 <tr class="separator:ga1fbe3f1d4df19060519793abe4eddb99"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:ga8631dfab6497698b91b9f1f29634bf91"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__slice.html#ga8631dfab6497698b91b9f1f29634bf91">FreeFunction</a>) (<a class="el" href="structAllocator.html">Allocator</a> *allocator, void *pointer)</td></tr>
-<tr class="memdesc:ga8631dfab6497698b91b9f1f29634bf91"><td class="mdescLeft">&#160;</td><td class="mdescRight">A prototype for a free function, which is intended to be passed to slice__free__full.  <a href="group__slice.html#ga8631dfab6497698b91b9f1f29634bf91">More...</a><br /></td></tr>
-<tr class="separator:ga8631dfab6497698b91b9f1f29634bf91"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga07ac01ac941fb5d1fd50f5f90e2b46d9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structSlice.html">Slice</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__slice.html#ga07ac01ac941fb5d1fd50f5f90e2b46d9">slice__new</a> (<a class="el" href="structAllocator.html">Allocator</a> *allocator, unsigned long long element_size, unsigned long long element_count)</td></tr>
-<tr class="memdesc:ga07ac01ac941fb5d1fd50f5f90e2b46d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new <a class="el" href="structSlice.html">Slice</a> data structure on the heap, using the provided allocator.  <a href="group__slice.html#ga07ac01ac941fb5d1fd50f5f90e2b46d9">More...</a><br /></td></tr>
-<tr class="separator:ga07ac01ac941fb5d1fd50f5f90e2b46d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaef5336c6de6fae61b7e0590a1d759068"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structSlice.html">Slice</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__slice.html#gaef5336c6de6fae61b7e0590a1d759068">slice__new__steal</a> (<a class="el" href="structAllocator.html">Allocator</a> *allocator, unsigned long long element_size, unsigned long long element_count, void *data, unsigned long long data_capacity)</td></tr>
-<tr class="memdesc:gaef5336c6de6fae61b7e0590a1d759068"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new <a class="el" href="structSlice.html">Slice</a> data structure on the heap using the provided allocator. Assumes ownership of the supplied data.  <a href="group__slice.html#gaef5336c6de6fae61b7e0590a1d759068">More...</a><br /></td></tr>
-<tr class="separator:gaef5336c6de6fae61b7e0590a1d759068"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaed79fa3d7ed8e5b84ebc8e718c71cb56"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structSlice.html">Slice</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__slice.html#gaed79fa3d7ed8e5b84ebc8e718c71cb56">slice__copy</a> (<a class="el" href="structAllocator.html">Allocator</a> *allocator, <a class="el" href="structSlice.html">Slice</a> const *slice)</td></tr>
-<tr class="memdesc:gaed79fa3d7ed8e5b84ebc8e718c71cb56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new deep copy of a <a class="el" href="structSlice.html">Slice</a> structure. The new <a class="el" href="structSlice.html">Slice</a> contains its own newly-allocated memory; memory is not shared between the original and the copy.  <a href="group__slice.html#gaed79fa3d7ed8e5b84ebc8e718c71cb56">More...</a><br /></td></tr>
-<tr class="separator:gaed79fa3d7ed8e5b84ebc8e718c71cb56"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga88fb55ee28346ef42a4cea80132353ca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__slice.html#ga88fb55ee28346ef42a4cea80132353ca">slice__free</a> (<a class="el" href="structAllocator.html">Allocator</a> *allocator, <a class="el" href="structSlice.html">Slice</a> *slice)</td></tr>
-<tr class="memdesc:ga88fb55ee28346ef42a4cea80132353ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frees a dynamically-allocated <a class="el" href="structSlice.html">Slice</a> structure This method will free the data field of the structure as well. However, if the elements contained in the data field are themselves dynamically allocated, those will not be freed. In that case, use slice__free__full.  <a href="group__slice.html#ga88fb55ee28346ef42a4cea80132353ca">More...</a><br /></td></tr>
-<tr class="separator:ga88fb55ee28346ef42a4cea80132353ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1e871d9b9558cdb985128afa071a2eee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__slice.html#ga1e871d9b9558cdb985128afa071a2eee">slice__free__full</a> (<a class="el" href="structAllocator.html">Allocator</a> *allocator, <a class="el" href="structSlice.html">Slice</a> *slice, <a class="el" href="group__slice.html#ga8631dfab6497698b91b9f1f29634bf91">FreeFunction</a> free_function)</td></tr>
-<tr class="memdesc:ga1e871d9b9558cdb985128afa071a2eee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frees a dynamically-allocated <a class="el" href="structSlice.html">Slice</a> structure, first calling the supplied FreeFunction on each of the elements contained within the <a class="el" href="structSlice.html">Slice</a>.  <a href="group__slice.html#ga1e871d9b9558cdb985128afa071a2eee">More...</a><br /></td></tr>
-<tr class="separator:ga1e871d9b9558cdb985128afa071a2eee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2bb1f7a6826643794c8298fe46134e9d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__slice.html#ga2bb1f7a6826643794c8298fe46134e9d">slice__clear</a> (<a class="el" href="structSlice.html">Slice</a> *slice, <a class="el" href="structAllocator.html">Allocator</a> *allocator)</td></tr>
+<tr class="memdesc:ga2bb1f7a6826643794c8298fe46134e9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frees the data contained within the <a class="el" href="structSlice.html">Slice</a>, without freeing the <a class="el" href="structSlice.html">Slice</a> structure itself.  <a href="group__slice.html#ga2bb1f7a6826643794c8298fe46134e9d">More...</a><br /></td></tr>
+<tr class="separator:ga2bb1f7a6826643794c8298fe46134e9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga728f2ac45ba39f2a989981f9f43f2ec6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__slice.html#ga728f2ac45ba39f2a989981f9f43f2ec6">slice__clear_elements</a> (<a class="el" href="structSlice.html">Slice</a> *slice, unsigned long long start_index, unsigned long long element_count)</td></tr>
 <tr class="memdesc:ga728f2ac45ba39f2a989981f9f43f2ec6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears the specified elements of a <a class="el" href="structSlice.html">Slice</a> by setting them equal to 0.  <a href="group__slice.html#ga728f2ac45ba39f2a989981f9f43f2ec6">More...</a><br /></td></tr>
 <tr class="separator:ga728f2ac45ba39f2a989981f9f43f2ec6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga9ee1a1a545f482ad8d7bea1a04f47330"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__slice.html#ga9ee1a1a545f482ad8d7bea1a04f47330">slice__equals</a> (<a class="el" href="structSlice.html">Slice</a> const *first, <a class="el" href="structSlice.html">Slice</a> const *second)</td></tr>
 <tr class="memdesc:ga9ee1a1a545f482ad8d7bea1a04f47330"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares two <a class="el" href="structSlice.html">Slice</a> structures for equality.  <a href="group__slice.html#ga9ee1a1a545f482ad8d7bea1a04f47330">More...</a><br /></td></tr>
 <tr class="separator:ga9ee1a1a545f482ad8d7bea1a04f47330"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7cf6394a93593dfad1c7aba60328ce95"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__slice.html#ga7cf6394a93593dfad1c7aba60328ce95">slice__init</a> (<a class="el" href="structSlice.html">Slice</a> *slice, <a class="el" href="structAllocator.html">Allocator</a> *allocator, unsigned long long element_size, unsigned long long capacity)</td></tr>
+<tr class="memdesc:ga7cf6394a93593dfad1c7aba60328ce95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fully initialize a slice with allocated memory.  <a href="group__slice.html#ga7cf6394a93593dfad1c7aba60328ce95">More...</a><br /></td></tr>
+<tr class="separator:ga7cf6394a93593dfad1c7aba60328ce95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga559247ecdbca754c80f63e82605e1657"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__slice.html#ga559247ecdbca754c80f63e82605e1657">slice__init__format</a> (<a class="el" href="structSlice.html">Slice</a> *slice, <a class="el" href="structAllocator.html">Allocator</a> *allocator, const char *format,...)</td></tr>
+<tr class="memdesc:ga559247ecdbca754c80f63e82605e1657"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method initializes a Slice&lt;char&gt; with the given format parameters.  <a href="group__slice.html#ga559247ecdbca754c80f63e82605e1657">More...</a><br /></td></tr>
+<tr class="separator:ga559247ecdbca754c80f63e82605e1657"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae8da4b733ddfaef014526d29a4ea7eb4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__slice.html#gae8da4b733ddfaef014526d29a4ea7eb4">slice__init__full</a> (<a class="el" href="structSlice.html">Slice</a> *slice, <a class="el" href="structAllocator.html">Allocator</a> *allocator, unsigned long long element_size, void const *data, unsigned long long length)</td></tr>
+<tr class="memdesc:gae8da4b733ddfaef014526d29a4ea7eb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method fully initializes a generic <a class="el" href="structSlice.html">Slice</a> with the given data.  <a href="group__slice.html#gae8da4b733ddfaef014526d29a4ea7eb4">More...</a><br /></td></tr>
+<tr class="separator:gae8da4b733ddfaef014526d29a4ea7eb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadc0dfdc0a64a685f6d09ed5258126f5f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__slice.html#gadc0dfdc0a64a685f6d09ed5258126f5f">slice__init__va_list</a> (<a class="el" href="structSlice.html">Slice</a> *slice, <a class="el" href="structAllocator.html">Allocator</a> *allocator, const char *format, va_list args)</td></tr>
+<tr class="memdesc:gadc0dfdc0a64a685f6d09ed5258126f5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method initializes a Slice&lt;char&gt; with the given format parameters.  <a href="group__slice.html#gadc0dfdc0a64a685f6d09ed5258126f5f">More...</a><br /></td></tr>
+<tr class="separator:gadc0dfdc0a64a685f6d09ed5258126f5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -291,51 +278,6 @@ Modifying the returned value will modify the underlying <a class="el" href="stru
 
 </div>
 </div>
-<a id="gadebf28cefce13ca6ed1144058972028f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gadebf28cefce13ca6ed1144058972028f">&#9670;&nbsp;</a></span>slice__init</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define slice__init</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">DATA, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">LENGTH, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">ELEMENT_SIZE&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td>&#160;&#160;&#160;(<a class="el" href="structSlice.html">Slice</a>) { .data = (void*) (DATA), .length = (LENGTH), .capacity = LENGTH, .element_size = (ELEMENT_SIZE) }</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Fully initialize a slice with an array of known length. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">DATA</td><td>A pointer to the start of the array </td></tr>
-    <tr><td class="paramname">LENGTH</td><td>The length of the array in elements </td></tr>
-    <tr><td class="paramname">ELEMENT_SIZE</td><td>The size, in bytes of one array element. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>An initialized slice object containing the specified data. </dd></dl>
-
-</div>
-</div>
 <a id="ga1d0af5810dc747fd8b21e536fab9ab33"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga1d0af5810dc747fd8b21e536fab9ab33">&#9670;&nbsp;</a></span>slice__string_literal</h2>
 
@@ -364,30 +306,44 @@ Modifying the returned value will modify the underlying <a class="el" href="stru
 
 </div>
 </div>
-<h2 class="groupheader">Typedef Documentation</h2>
-<a id="ga8631dfab6497698b91b9f1f29634bf91"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga8631dfab6497698b91b9f1f29634bf91">&#9670;&nbsp;</a></span>FreeFunction</h2>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="ga2bb1f7a6826643794c8298fe46134e9d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2bb1f7a6826643794c8298fe46134e9d">&#9670;&nbsp;</a></span>slice__clear()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef void( * FreeFunction) (<a class="el" href="structAllocator.html">Allocator</a> *allocator, void *pointer)</td>
+          <td class="memname">void slice__clear </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structSlice.html">Slice</a> *&#160;</td>
+          <td class="paramname"><em>slice</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structAllocator.html">Allocator</a> *&#160;</td>
+          <td class="paramname"><em>allocator</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>A prototype for a free function, which is intended to be passed to slice__free__full. </p>
+<p>Frees the data contained within the <a class="el" href="structSlice.html">Slice</a>, without freeing the <a class="el" href="structSlice.html">Slice</a> structure itself. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pointer</td><td>A pointer to the data to be freed. </td></tr>
+    <tr><td class="paramname">slice</td><td>The <a class="el" href="structSlice.html">Slice</a> to be cleared </td></tr>
+    <tr><td class="paramname">allocator</td><td>The allocator which was used to allocate the <a class="el" href="structSlice.html">Slice</a>'s data. This must also be used to free the <a class="el" href="structSlice.html">Slice</a>'s data. </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<h2 class="groupheader">Function Documentation</h2>
 <a id="ga728f2ac45ba39f2a989981f9f43f2ec6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga728f2ac45ba39f2a989981f9f43f2ec6">&#9670;&nbsp;</a></span>slice__clear_elements()</h2>
 
@@ -432,44 +388,6 @@ Modifying the returned value will modify the underlying <a class="el" href="stru
 
 </div>
 </div>
-<a id="gaed79fa3d7ed8e5b84ebc8e718c71cb56"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaed79fa3d7ed8e5b84ebc8e718c71cb56">&#9670;&nbsp;</a></span>slice__copy()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structSlice.html">Slice</a>* slice__copy </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structAllocator.html">Allocator</a> *&#160;</td>
-          <td class="paramname"><em>allocator</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structSlice.html">Slice</a> const *&#160;</td>
-          <td class="paramname"><em>slice</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Creates a new deep copy of a <a class="el" href="structSlice.html">Slice</a> structure. The new <a class="el" href="structSlice.html">Slice</a> contains its own newly-allocated memory; memory is not shared between the original and the copy. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">allocator</td><td>A pointer to the allocator to use to allocate the new <a class="el" href="structSlice.html">Slice</a>. </td></tr>
-    <tr><td class="paramname">slice</td><td>The slice to be copied. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>a new <a class="el" href="structSlice.html">Slice</a> containing the same element_size, capacity, length, and elements as the original. </dd></dl>
-
-</div>
-</div>
 <a id="ga9ee1a1a545f482ad8d7bea1a04f47330"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga9ee1a1a545f482ad8d7bea1a04f47330">&#9670;&nbsp;</a></span>slice__equals()</h2>
 
@@ -510,96 +428,21 @@ Modifying the returned value will modify the underlying <a class="el" href="stru
 
 </div>
 </div>
-<a id="ga88fb55ee28346ef42a4cea80132353ca"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga88fb55ee28346ef42a4cea80132353ca">&#9670;&nbsp;</a></span>slice__free()</h2>
+<a id="ga7cf6394a93593dfad1c7aba60328ce95"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7cf6394a93593dfad1c7aba60328ce95">&#9670;&nbsp;</a></span>slice__init()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void slice__free </td>
+          <td class="memname">void slice__init </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structAllocator.html">Allocator</a> *&#160;</td>
-          <td class="paramname"><em>allocator</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structSlice.html">Slice</a> *&#160;</td>
-          <td class="paramname"><em>slice</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Frees a dynamically-allocated <a class="el" href="structSlice.html">Slice</a> structure This method will free the data field of the structure as well. However, if the elements contained in the data field are themselves dynamically allocated, those will not be freed. In that case, use slice__free__full. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">slice</td><td>A pointer to the slice structure to be freed. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section note"><dt>Note</dt><dd>Only call this on a dynamically-allocated <a class="el" href="structSlice.html">Slice</a>, such as one created with slice__new </dd></dl>
-
-</div>
-</div>
-<a id="ga1e871d9b9558cdb985128afa071a2eee"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga1e871d9b9558cdb985128afa071a2eee">&#9670;&nbsp;</a></span>slice__free__full()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void slice__free__full </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structAllocator.html">Allocator</a> *&#160;</td>
-          <td class="paramname"><em>allocator</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype"><a class="el" href="structSlice.html">Slice</a> *&#160;</td>
           <td class="paramname"><em>slice</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group__slice.html#ga8631dfab6497698b91b9f1f29634bf91">FreeFunction</a>&#160;</td>
-          <td class="paramname"><em>free_function</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Frees a dynamically-allocated <a class="el" href="structSlice.html">Slice</a> structure, first calling the supplied FreeFunction on each of the elements contained within the <a class="el" href="structSlice.html">Slice</a>. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">allocator</td><td>the allocator used to allocate memory for both the <a class="el" href="structSlice.html">Slice</a> and its elements. </td></tr>
-    <tr><td class="paramname">free_function</td><td>The function which will be called to free each element in slice-&gt;data. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section note"><dt>Note</dt><dd>the allocator used to allocate the <code>slice</code> and each element of slice-&gt;data must be the same. </dd></dl>
-
-</div>
-</div>
-<a id="ga07ac01ac941fb5d1fd50f5f90e2b46d9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga07ac01ac941fb5d1fd50f5f90e2b46d9">&#9670;&nbsp;</a></span>slice__new()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structSlice.html">Slice</a>* slice__new </td>
-          <td>(</td>
           <td class="paramtype"><a class="el" href="structAllocator.html">Allocator</a> *&#160;</td>
           <td class="paramname"><em>allocator</em>, </td>
         </tr>
@@ -613,7 +456,7 @@ Modifying the returned value will modify the underlying <a class="el" href="stru
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">unsigned long long&#160;</td>
-          <td class="paramname"><em>element_count</em>&#160;</td>
+          <td class="paramname"><em>capacity</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -623,28 +466,84 @@ Modifying the returned value will modify the underlying <a class="el" href="stru
       </table>
 </div><div class="memdoc">
 
-<p>Creates a new <a class="el" href="structSlice.html">Slice</a> data structure on the heap, using the provided allocator. </p>
+<p>Fully initialize a slice with allocated memory. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">allocator</td><td>A pointer to the allocator to use for dynamic memory allocation. </td></tr>
-    <tr><td class="paramname">element_size</td><td>The size of the elements to be stored in the slice. </td></tr>
-    <tr><td class="paramname">element_count</td><td>The maximum number of elements this slice will hold before needing to allocate more memory. </td></tr>
+    <tr><td class="paramname">slice</td><td>A pointer to the <a class="el" href="structSlice.html">Slice</a> which will be initialized. </td></tr>
+    <tr><td class="paramname">allocator</td><td>A pointer to the allocator which will be used to initialize memory owned by this <a class="el" href="structSlice.html">Slice</a>. </td></tr>
+    <tr><td class="paramname">element_size</td><td>The size of a single element contained by the <a class="el" href="structSlice.html">Slice</a>. </td></tr>
+    <tr><td class="paramname">capacity</td><td>The allocated capacity of <code>data</code> in elements. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A newly-allocated slice with length 0 and storage for <code>element_count</code> elements of size <code>element_size</code>. </dd></dl>
 
 </div>
 </div>
-<a id="gaef5336c6de6fae61b7e0590a1d759068"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaef5336c6de6fae61b7e0590a1d759068">&#9670;&nbsp;</a></span>slice__new__steal()</h2>
+<a id="ga559247ecdbca754c80f63e82605e1657"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga559247ecdbca754c80f63e82605e1657">&#9670;&nbsp;</a></span>slice__init__format()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structSlice.html">Slice</a>* slice__new__steal </td>
+          <td class="memname">void slice__init__format </td>
           <td>(</td>
+          <td class="paramtype"><a class="el" href="structSlice.html">Slice</a> *&#160;</td>
+          <td class="paramname"><em>slice</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structAllocator.html">Allocator</a> *&#160;</td>
+          <td class="paramname"><em>allocator</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>format</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This method initializes a Slice&lt;char&gt; with the given format parameters. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">slice</td><td>A pointer to a the <a class="el" href="structSlice.html">Slice</a> which will be initialized. </td></tr>
+    <tr><td class="paramname">allocator</td><td>A pointer to the <a class="el" href="structAllocator.html">Allocator</a> which will be used to initialize memory owned by this <a class="el" href="structSlice.html">Slice</a>. </td></tr>
+    <tr><td class="paramname">format</td><td>A C-style string which may optionally include printf-style format specifiers, followed by a varargs list of the variables to be formatted. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="gae8da4b733ddfaef014526d29a4ea7eb4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae8da4b733ddfaef014526d29a4ea7eb4">&#9670;&nbsp;</a></span>slice__init__full()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void slice__init__full </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structSlice.html">Slice</a> *&#160;</td>
+          <td class="paramname"><em>slice</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype"><a class="el" href="structAllocator.html">Allocator</a> *&#160;</td>
           <td class="paramname"><em>allocator</em>, </td>
         </tr>
@@ -657,20 +556,14 @@ Modifying the returned value will modify the underlying <a class="el" href="stru
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">unsigned long long&#160;</td>
-          <td class="paramname"><em>element_count</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *&#160;</td>
+          <td class="paramtype">void const *&#160;</td>
           <td class="paramname"><em>data</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">unsigned long long&#160;</td>
-          <td class="paramname"><em>data_capacity</em>&#160;</td>
+          <td class="paramname"><em>length</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -680,18 +573,68 @@ Modifying the returned value will modify the underlying <a class="el" href="stru
       </table>
 </div><div class="memdoc">
 
-<p>Creates a new <a class="el" href="structSlice.html">Slice</a> data structure on the heap using the provided allocator. Assumes ownership of the supplied data. </p>
+<p>This method fully initializes a generic <a class="el" href="structSlice.html">Slice</a> with the given data. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">allocator</td><td>A pointer to the allocator to use for dynamic memory allocation. </td></tr>
-    <tr><td class="paramname">element_size</td><td>The size of the elements to be stored in the slice. </td></tr>
-    <tr><td class="paramname">element_count</td><td>The maximum number of elements this slice will hold before needing to allocate more memory. </td></tr>
-    <tr><td class="paramname">data</td><td>A pointer to the data which will be stored in the <a class="el" href="structSlice.html">Slice</a>. The <a class="el" href="structSlice.html">Slice</a> assumes ownership of this data. It retains a reference in the data field, and this memory will be freed when slice__free or slice__free__full is called. </td></tr>
-    <tr><td class="paramname">data_capacity</td><td>The allocated capacity of <code>data</code>, in elements. This is distinct from <code>element_count</code>. While <code>element_count</code> refers to the number of elements actually stored within the memory pointed to by <code>data</code>, <code>data_capacity</code> refers to the number of elements which <code>data</code> is able to hold. </td></tr>
+    <tr><td class="paramname">slice</td><td>A pointer to the <a class="el" href="structSlice.html">Slice</a> which will be initialized. </td></tr>
+    <tr><td class="paramname">allocator</td><td>A pointer to the <a class="el" href="structAllocator.html">Allocator</a> which will be used to initialize memory owned by <code>slice</code>. </td></tr>
+    <tr><td class="paramname">element_size</td><td>The size of the elements contained in <code>data</code>. </td></tr>
+    <tr><td class="paramname">data</td><td>A pointer to the memory region containing the elements which will be contained by <code>slice</code>. Elements be copied and <code>data</code> will not be modified. Managing the memory allocated for <code>data</code> is the caller's responsibility. </td></tr>
+    <tr><td class="paramname">length</td><td>The length, in elements of <code>data</code>. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A newly-allocated slice containing <code>data</code>. </dd></dl>
+
+</div>
+</div>
+<a id="gadc0dfdc0a64a685f6d09ed5258126f5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadc0dfdc0a64a685f6d09ed5258126f5f">&#9670;&nbsp;</a></span>slice__init__va_list()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void slice__init__va_list </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structSlice.html">Slice</a> *&#160;</td>
+          <td class="paramname"><em>slice</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structAllocator.html">Allocator</a> *&#160;</td>
+          <td class="paramname"><em>allocator</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>format</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">va_list&#160;</td>
+          <td class="paramname"><em>args</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This method initializes a Slice&lt;char&gt; with the given format parameters. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">slice</td><td>A pointer to the <a class="el" href="structSlice.html">Slice</a> which will be initialized. </td></tr>
+    <tr><td class="paramname">allocator</td><td>A pointer to the <a class="el" href="structAllocator.html">Allocator</a> which will be used to initialize memory owned by <code>slice</code>. </td></tr>
+    <tr><td class="paramname">format</td><td>A C-style string which may optionally include printf-style format specifiers </td></tr>
+    <tr><td class="paramname">args</td><td>a va_list containing the arguments referenced in <code>format</code>. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

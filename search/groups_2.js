@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['slice_118',['Slice',['../group__slice.html',1,'']]],
-  ['systemallocator_119',['SystemAllocator',['../group__system__allocator.html',1,'']]]
+  ['io_157',['IO',['../group__io.html',1,'']]]
 ];

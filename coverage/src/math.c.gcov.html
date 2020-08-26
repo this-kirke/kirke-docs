@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2020-08-04 22:21:35</td>
+            <td class="headerValue">2020-08-25 20:48:49</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">7</td>
@@ -116,16 +116,16 @@
 <a name="54"><span class="lineNum">      54 </span><span class="lineCov">          5 :     return second;</span></a>
 <a name="55"><span class="lineNum">      55 </span>            : }</a>
 <a name="56"><span class="lineNum">      56 </span>            : </a>
-<a name="57"><span class="lineNum">      57 </span><span class="lineCov">         29 : unsigned long math__nearest_greater_power_of_2__ulong( unsigned long value ){</span></a>
-<a name="58"><span class="lineNum">      58 </span><span class="lineCov">         29 :     if( value == 0 ){</span></a>
+<a name="57"><span class="lineNum">      57 </span><span class="lineCov">         30 : unsigned long math__nearest_greater_power_of_2__ulong( unsigned long value ){</span></a>
+<a name="58"><span class="lineNum">      58 </span><span class="lineCov">         30 :     if( value == 0 ){</span></a>
 <a name="59"><span class="lineNum">      59 </span><span class="lineCov">          1 :         return 1;</span></a>
 <a name="60"><span class="lineNum">      60 </span>            :     }</a>
 <a name="61"><span class="lineNum">      61 </span>            : </a>
-<a name="62"><span class="lineNum">      62 </span><span class="lineCov">         68 :         while( value &amp; value - 1 ){ </span></a>
-<a name="63"><span class="lineNum">      63 </span><span class="lineCov">         40 :                 value = value &amp; value - 1;</span></a>
+<a name="62"><span class="lineNum">      62 </span><span class="lineCov">         69 :         while( value &amp; ( value - 1 ) ){ </span></a>
+<a name="63"><span class="lineNum">      63 </span><span class="lineCov">         40 :                 value = value &amp; ( value - 1 );</span></a>
 <a name="64"><span class="lineNum">      64 </span>            :     }</a>
 <a name="65"><span class="lineNum">      65 </span>            : </a>
-<a name="66"><span class="lineNum">      66 </span><span class="lineCov">         28 :         return value &lt;&lt; 1;</span></a>
+<a name="66"><span class="lineNum">      66 </span><span class="lineCov">         29 :         return value &lt;&lt; 1;</span></a>
 <a name="67"><span class="lineNum">      67 </span>            : }</a>
 </pre>
       </td>

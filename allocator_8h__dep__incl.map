@@ -1,4 +1,5 @@
 <map id="lib/kirke/include/kirke/allocator.h" name="lib/kirke/include/kirke/allocator.h">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,167,47"/>
-<area shape="rect" id="node2" href="$system__allocator_8h.html" title=" " alt="" coords="5,95,167,136"/>
+<area shape="rect" id="node1" title=" " alt="" coords="97,5,259,47"/>
+<area shape="rect" id="node2" href="$error_8h.html" title=" " alt="" coords="5,95,167,136"/>
+<area shape="rect" id="node3" href="$system__allocator_8h.html" title=" " alt="" coords="191,95,352,136"/>
 </map>

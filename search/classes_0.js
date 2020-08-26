@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['allocator_64',['Allocator',['../structAllocator.html',1,'']]],
-  ['autoslice_65',['AutoSlice',['../structAutoSlice.html',1,'']]]
+  ['allocator_87',['Allocator',['../structAllocator.html',1,'']]],
+  ['autoslice_88',['AutoSlice',['../structAutoSlice.html',1,'']]]
 ];

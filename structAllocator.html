@@ -103,15 +103,15 @@ $(document).ready(function(){initNavTree('structAllocator.html',''); initResizab
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:ad96403a8f31e75353877add8f6f40d83"><td class="memItemLeft" align="right" valign="top"><a id="ad96403a8f31e75353877add8f6f40d83"></a>
-void *(*&#160;</td><td class="memItemRight" valign="bottom"><b>alloc</b> )(void *allocator_data, unsigned long long size)</td></tr>
-<tr class="separator:ad96403a8f31e75353877add8f6f40d83"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a88cc8626e22f2ef3d5eef095b874dd45"><td class="memItemLeft" align="right" valign="top"><a id="a88cc8626e22f2ef3d5eef095b874dd45"></a>
-void *(*&#160;</td><td class="memItemRight" valign="bottom"><b>realloc</b> )(void *allocator_data, void *pointer, unsigned long long size)</td></tr>
-<tr class="separator:a88cc8626e22f2ef3d5eef095b874dd45"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac155d7939224f61a1d57a3df3b1ba429"><td class="memItemLeft" align="right" valign="top"><a id="ac155d7939224f61a1d57a3df3b1ba429"></a>
-void(*&#160;</td><td class="memItemRight" valign="bottom"><b>free</b> )(void *allocator_data, void *pointer)</td></tr>
-<tr class="separator:ac155d7939224f61a1d57a3df3b1ba429"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa038ec805b46e97399e5d5096555ffa4"><td class="memItemLeft" align="right" valign="top"><a id="aa038ec805b46e97399e5d5096555ffa4"></a>
+void *(*&#160;</td><td class="memItemRight" valign="bottom"><b>alloc</b> )(unsigned long long size, void *allocator_data)</td></tr>
+<tr class="separator:aa038ec805b46e97399e5d5096555ffa4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcb1756af5b3759f4a6ca0731ecc9ce7"><td class="memItemLeft" align="right" valign="top"><a id="abcb1756af5b3759f4a6ca0731ecc9ce7"></a>
+void *(*&#160;</td><td class="memItemRight" valign="bottom"><b>realloc</b> )(void *pointer, unsigned long long size, void *allocator_data)</td></tr>
+<tr class="separator:abcb1756af5b3759f4a6ca0731ecc9ce7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77b5cc43c7317c8467d51fd7fdebe961"><td class="memItemLeft" align="right" valign="top"><a id="a77b5cc43c7317c8467d51fd7fdebe961"></a>
+void(*&#160;</td><td class="memItemRight" valign="bottom"><b>free</b> )(void *pointer, void *allocator_data)</td></tr>
+<tr class="separator:a77b5cc43c7317c8467d51fd7fdebe961"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af02ff976d5aa6ff11561d74feb9e814b"><td class="memItemLeft" align="right" valign="top"><a id="af02ff976d5aa6ff11561d74feb9e814b"></a>
 void(*&#160;</td><td class="memItemRight" valign="bottom"><b>out_of_memory</b> )(void *allocator_data)</td></tr>
 <tr class="separator:af02ff976d5aa6ff11561d74feb9e814b"><td class="memSeparator" colspan="2">&#160;</td></tr>

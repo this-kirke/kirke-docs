@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['slice_66',['Slice',['../structSlice.html',1,'']]],
-  ['systemallocator_67',['SystemAllocator',['../structSystemAllocator.html',1,'']]]
+  ['error_89',['Error',['../structError.html',1,'']]]
 ];

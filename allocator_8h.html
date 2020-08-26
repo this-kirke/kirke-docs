@@ -116,8 +116,9 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="allocator_8h__dep__incl.png" border="0" usemap="#lib_2kirke_2include_2kirke_2allocator_8hdep" alt=""/></div>
 <map name="lib_2kirke_2include_2kirke_2allocator_8hdep" id="lib_2kirke_2include_2kirke_2allocator_8hdep">
-<area shape="rect" title=" " alt="" coords="5,5,167,47"/>
-<area shape="rect" href="system__allocator_8h.html" title=" " alt="" coords="5,95,167,136"/>
+<area shape="rect" title=" " alt="" coords="97,5,259,47"/>
+<area shape="rect" href="error_8h.html" title=" " alt="" coords="5,95,167,136"/>
+<area shape="rect" href="system__allocator_8h.html" title=" " alt="" coords="191,95,352,136"/>
 </map>
 </div>
 </div>
@@ -125,16 +126,16 @@ This graph shows which files directly or indirectly include this file:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:ga3da4ea908371040297c1c6fe756252ce"><td class="memItemLeft" align="right" valign="top">
-typedef typedefBEGIN_DECLARATIONS struct <a class="el" href="structAllocator.html">Allocator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__allocator.html#ga3da4ea908371040297c1c6fe756252ce">Allocator</a></td></tr>
-<tr class="memdesc:ga3da4ea908371040297c1c6fe756252ce"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structAllocator.html">Allocator</a> is a structure which handles dynamic memory allocation and release. <a class="el" href="structAllocator.html">Allocator</a> itself is opaque, and defined in kirke/src/allocator.c. <a class="el" href="structAllocator.html">Allocator</a> is just a virtual function table with references to methods for alloc, realloc, free, and out_of_memory. <a class="el" href="structAllocator.html">Allocator</a> can be used direcly by defining these methods and calling allocator__create. Or, <a class="el" href="structAllocator.html">Allocator</a> can be specialized by defining a structure containing an Allocator* member, see <a class="el" href="structSystemAllocator.html">SystemAllocator</a> for an example. <br /></td></tr>
-<tr class="separator:ga3da4ea908371040297c1c6fe756252ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga76ee1dc9907b0baa09a6ca1e15fe9a00"><td class="memItemLeft" align="right" valign="top">
+typedef typedefBEGIN_DECLARATIONS struct <a class="el" href="structAllocator.html">Allocator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__allocator.html#ga76ee1dc9907b0baa09a6ca1e15fe9a00">Allocator</a></td></tr>
+<tr class="memdesc:ga76ee1dc9907b0baa09a6ca1e15fe9a00"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structAllocator.html">Allocator</a> is a structure which handles dynamic memory allocation and release. <a class="el" href="structAllocator.html">Allocator</a> itself is opaque, and defined in kirke/src/allocator.c. <a class="el" href="structAllocator.html">Allocator</a> is just a virtual function table with references to methods for alloc, realloc, free, and out_of_memory. <a class="el" href="structAllocator.html">Allocator</a> can be used direcly by defining these methods and calling allocator__create. Or, <a class="el" href="structAllocator.html">Allocator</a> can be specialized by defining a structure containing an Allocator* member, see <a class="el" href="structSystemAllocator.html">SystemAllocator</a> for an example. <br /></td></tr>
+<tr class="separator:ga76ee1dc9907b0baa09a6ca1e15fe9a00"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga9a30edd49e652e52a544d190985127a8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structAllocator.html">Allocator</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__allocator.html#ga9a30edd49e652e52a544d190985127a8">allocator__create</a> (void *(*alloc_function)(void *allocator_data, unsigned long long size), void *(*realloc_function)(void *allocator_data, void *pointer, unsigned long long size), void(*free_function)(void *allocator_data, void *pointer), void(*out_of_memory_function)(void *allocator_data), void *allocator_data)</td></tr>
-<tr class="memdesc:ga9a30edd49e652e52a544d190985127a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an allocator structure with the specified methods. The <a class="el" href="structAllocator.html">Allocator</a> structure itself is dynamically-allocated using the specified alloc_function.  <a href="group__allocator.html#ga9a30edd49e652e52a544d190985127a8">More...</a><br /></td></tr>
-<tr class="separator:ga9a30edd49e652e52a544d190985127a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaebecf8eb6c6474bfbfb9ce1bb6eaff5f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structAllocator.html">Allocator</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__allocator.html#gaebecf8eb6c6474bfbfb9ce1bb6eaff5f">allocator__create</a> (void *(*alloc_function)(unsigned long long size, void *allocator_data), void *(*realloc_function)(void *pointer, unsigned long long size, void *allocator_data), void(*free_function)(void *pointer, void *allocator_data), void(*out_of_memory_function)(void *allocator_data), void *allocator_data)</td></tr>
+<tr class="memdesc:gaebecf8eb6c6474bfbfb9ce1bb6eaff5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an allocator structure with the specified methods. The <a class="el" href="structAllocator.html">Allocator</a> structure itself is dynamically-allocated using the specified alloc_function.  <a href="group__allocator.html#gaebecf8eb6c6474bfbfb9ce1bb6eaff5f">More...</a><br /></td></tr>
+<tr class="separator:gaebecf8eb6c6474bfbfb9ce1bb6eaff5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf7eae5ba5c8689a976172183c72958cd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__allocator.html#gaf7eae5ba5c8689a976172183c72958cd">allocator__destroy</a> (<a class="el" href="structAllocator.html">Allocator</a> *allocator)</td></tr>
 <tr class="memdesc:gaf7eae5ba5c8689a976172183c72958cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method destroys an allocator, freeing the memory allocated for the <a class="el" href="structAllocator.html">Allocator</a> structure itself by calling allocator-&gt;free_function.  <a href="group__allocator.html#gaf7eae5ba5c8689a976172183c72958cd">More...</a><br /></td></tr>
 <tr class="separator:gaf7eae5ba5c8689a976172183c72958cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
