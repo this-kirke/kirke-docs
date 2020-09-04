@@ -1,7 +1,13 @@
 <map id="lib/kirke/include/kirke/error.h" name="lib/kirke/include/kirke/error.h">
-<area shape="rect" id="node1" title=" " alt="" coords="74,5,235,47"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,169,80,196"/>
-<area shape="rect" id="node3" href="$allocator_8h.html" title=" " alt="" coords="161,95,287,121"/>
-<area shape="rect" id="node4" href="$macros_8h.html" title=" " alt="" coords="165,169,283,196"/>
-<area shape="rect" id="node5" href="$slice_8h.html" title=" " alt="" coords="37,95,137,121"/>
+<area shape="rect" id="node1" title=" " alt="" coords="193,5,354,47"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,319,80,345"/>
+<area shape="rect" id="node3" title=" " alt="" coords="540,244,623,271"/>
+<area shape="rect" id="node4" href="$macros_8h.html" title=" " alt="" coords="291,319,410,345"/>
+<area shape="rect" id="node5" href="$string_8h.html" title=" " alt="" coords="340,95,447,121"/>
+<area shape="rect" id="node6" href="$array_8h.html" title=" " alt="" coords="342,169,445,196"/>
+<area shape="rect" id="node7" href="$allocator_8h.html" title=" " alt="" coords="261,244,387,271"/>
+<area shape="rect" id="node8" href="$log_8h.html" title=" " alt="" coords="95,244,185,271"/>
+<area shape="rect" id="node11" href="$math_8h.html" title=" " alt="" coords="412,244,516,271"/>
+<area shape="rect" id="node9" title=" " alt="" coords="200,319,267,345"/>
+<area shape="rect" id="node10" title=" " alt="" coords="105,319,175,345"/>
 </map>

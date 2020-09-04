@@ -1,6 +1,13 @@
 <map id="lib/kirke/include/kirke/split_iterator.h" name="lib/kirke/include/kirke/split_iterator.h">
-<area shape="rect" id="node1" title=" " alt="" coords="39,5,201,47"/>
-<area shape="rect" id="node2" href="$slice_8h.html" title=" " alt="" coords="26,95,126,121"/>
-<area shape="rect" id="node4" href="$macros_8h.html" title=" " alt="" coords="105,169,223,196"/>
-<area shape="rect" id="node3" title=" " alt="" coords="5,169,80,196"/>
+<area shape="rect" id="node1" title=" " alt="" coords="210,5,371,47"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,244,88,271"/>
+<area shape="rect" id="node3" href="$macros_8h.html" title=" " alt="" coords="371,319,490,345"/>
+<area shape="rect" id="node4" href="$string_8h.html" title=" " alt="" coords="237,95,344,121"/>
+<area shape="rect" id="node5" href="$array_8h.html" title=" " alt="" coords="239,169,342,196"/>
+<area shape="rect" id="node6" href="$allocator_8h.html" title=" " alt="" coords="227,244,354,271"/>
+<area shape="rect" id="node7" href="$log_8h.html" title=" " alt="" coords="112,244,203,271"/>
+<area shape="rect" id="node11" href="$math_8h.html" title=" " alt="" coords="379,244,483,271"/>
+<area shape="rect" id="node8" title=" " alt="" coords="25,319,100,345"/>
+<area shape="rect" id="node9" title=" " alt="" coords="124,319,191,345"/>
+<area shape="rect" id="node10" title=" " alt="" coords="215,319,286,345"/>
 </map>

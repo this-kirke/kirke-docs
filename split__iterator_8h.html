@@ -101,17 +101,25 @@ $(document).ready(function(){initNavTree('split__iterator_8h.html',''); initResi
 <div class="title">split_iterator.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="slice_8h_source.html">kirke/slice.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &lt;stdbool.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="macros_8h_source.html">kirke/macros.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="string_8h_source.html">kirke/string.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for split_iterator.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="split__iterator_8h__incl.png" border="0" usemap="#lib_2kirke_2include_2kirke_2split__iterator_8h" alt=""/></div>
 <map name="lib_2kirke_2include_2kirke_2split__iterator_8h" id="lib_2kirke_2include_2kirke_2split__iterator_8h">
-<area shape="rect" title=" " alt="" coords="39,5,201,47"/>
-<area shape="rect" href="slice_8h.html" title=" " alt="" coords="26,95,126,121"/>
-<area shape="rect" href="macros_8h.html" title=" " alt="" coords="105,169,223,196"/>
-<area shape="rect" title=" " alt="" coords="5,169,80,196"/>
+<area shape="rect" title=" " alt="" coords="210,5,371,47"/>
+<area shape="rect" title=" " alt="" coords="5,244,88,271"/>
+<area shape="rect" href="macros_8h.html" title=" " alt="" coords="371,319,490,345"/>
+<area shape="rect" href="string_8h.html" title=" " alt="" coords="237,95,344,121"/>
+<area shape="rect" href="array_8h.html" title=" " alt="" coords="239,169,342,196"/>
+<area shape="rect" href="allocator_8h.html" title=" " alt="" coords="227,244,354,271"/>
+<area shape="rect" href="log_8h.html" title=" " alt="" coords="112,244,203,271"/>
+<area shape="rect" href="math_8h.html" title=" " alt="" coords="379,244,483,271"/>
+<area shape="rect" title=" " alt="" coords="25,319,100,345"/>
+<area shape="rect" title=" " alt="" coords="124,319,191,345"/>
+<area shape="rect" title=" " alt="" coords="215,319,286,345"/>
 </map>
 </div>
 </div>
@@ -120,20 +128,23 @@ Include dependency graph for split_iterator.h:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSplitIterator.html">SplitIterator</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is a type which captures state for a split iterator. A split iterator splits a <a class="el" href="structSlice.html">Slice</a> into component Slices - tokens - which are separated by a delimiter. Delimiters can be multiple elements long.  <a href="structSplitIterator.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is a type which captures state for a split iterator. A split iterator splits a String into component Strings - tokens - which are separated by a delimiter. Delimiters themselves are Strings, and can be multiple elements long.  <a href="structSplitIterator.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gafa56eab8d66c796a49cf1ee95077a13e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__split__iterator.html#gafa56eab8d66c796a49cf1ee95077a13e">split_iterator__init</a> (<a class="el" href="structSplitIterator.html">SplitIterator</a> *iterator, const <a class="el" href="structSlice.html">Slice</a> *slice, const <a class="el" href="structSlice.html">Slice</a> *delimiter)</td></tr>
-<tr class="memdesc:gafa56eab8d66c796a49cf1ee95077a13e"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method initializes a <a class="el" href="structSplitIterator.html" title="This is a type which captures state for a split iterator. A split iterator splits a Slice into compon...">SplitIterator</a> structure, storing a reference to the specified <a class="el" href="structSlice.html">Slice</a> and delimiter, and setting the <a class="el" href="structSplitIterator.html" title="This is a type which captures state for a split iterator. A split iterator splits a Slice into compon...">SplitIterator</a>'s position to 0.  <a href="group__split__iterator.html#gafa56eab8d66c796a49cf1ee95077a13e">More...</a><br /></td></tr>
-<tr class="separator:gafa56eab8d66c796a49cf1ee95077a13e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8cd8893c08a1a4d11c43ffa04f1f9b9e"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__split__iterator.html#ga8cd8893c08a1a4d11c43ffa04f1f9b9e">split_iterator__next</a> (<a class="el" href="structSplitIterator.html">SplitIterator</a> *iterator, <a class="el" href="structSlice.html">Slice</a> *out_token)</td></tr>
-<tr class="memdesc:ga8cd8893c08a1a4d11c43ffa04f1f9b9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method retrieves the next token found in the <a class="el" href="structSplitIterator.html" title="This is a type which captures state for a split iterator. A split iterator splits a Slice into compon...">SplitIterator</a>'s slice field, and stores it in the provided <a class="el" href="structSlice.html">Slice</a>.  <a href="group__split__iterator.html#ga8cd8893c08a1a4d11c43ffa04f1f9b9e">More...</a><br /></td></tr>
-<tr class="separator:ga8cd8893c08a1a4d11c43ffa04f1f9b9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga462cbb4c60f1b69ef4bd1c9e07fcb4ee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__split__iterator.html#ga462cbb4c60f1b69ef4bd1c9e07fcb4ee">split_iterator__rest</a> (<a class="el" href="structSplitIterator.html">SplitIterator</a> *iterator, <a class="el" href="structSlice.html">Slice</a> *out_rest)</td></tr>
-<tr class="memdesc:ga462cbb4c60f1b69ef4bd1c9e07fcb4ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method retrieves the portion of the <a class="el" href="structSplitIterator.html" title="This is a type which captures state for a split iterator. A split iterator splits a Slice into compon...">SplitIterator</a>'s <a class="el" href="group__slice.html">Slice</a> field following the <a class="el" href="structSplitIterator.html" title="This is a type which captures state for a split iterator. A split iterator splits a Slice into compon...">SplitIterator</a>'s current position.  <a href="group__split__iterator.html#ga462cbb4c60f1b69ef4bd1c9e07fcb4ee">More...</a><br /></td></tr>
-<tr class="separator:ga462cbb4c60f1b69ef4bd1c9e07fcb4ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5ce6b1177ddd625df05ba0017046d3c8"><td class="memItemLeft" align="right" valign="top">unsigned long long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__split__iterator.html#ga5ce6b1177ddd625df05ba0017046d3c8">split_iterator__count</a> (<a class="el" href="structSplitIterator.html">SplitIterator</a> const *iterator)</td></tr>
+<tr class="memdesc:ga5ce6b1177ddd625df05ba0017046d3c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method counts the number of tokens remaining in the <a class="el" href="structSplitIterator.html" title="This is a type which captures state for a split iterator. A split iterator splits a String into compo...">SplitIterator</a>. This is useful for determining the number of elements while not having to handle each token individually.  <a href="group__split__iterator.html#ga5ce6b1177ddd625df05ba0017046d3c8">More...</a><br /></td></tr>
+<tr class="separator:ga5ce6b1177ddd625df05ba0017046d3c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4b4e897a48edf4473582770d7fd94a04"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__split__iterator.html#ga4b4e897a48edf4473582770d7fd94a04">split_iterator__initialize</a> (<a class="el" href="structSplitIterator.html">SplitIterator</a> *iterator, const <a class="el" href="io_8h.html#a54ad19f2d17915dbf4eb4c2fa2fa8680">String</a> *string, const <a class="el" href="io_8h.html#a54ad19f2d17915dbf4eb4c2fa2fa8680">String</a> *delimiter)</td></tr>
+<tr class="memdesc:ga4b4e897a48edf4473582770d7fd94a04"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method initializes a <a class="el" href="structSplitIterator.html" title="This is a type which captures state for a split iterator. A split iterator splits a String into compo...">SplitIterator</a> structure, storing a reference to the specified String and delimiter, and setting the <a class="el" href="structSplitIterator.html" title="This is a type which captures state for a split iterator. A split iterator splits a String into compo...">SplitIterator</a>'s position to 0.  <a href="group__split__iterator.html#ga4b4e897a48edf4473582770d7fd94a04">More...</a><br /></td></tr>
+<tr class="separator:ga4b4e897a48edf4473582770d7fd94a04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga267dd63affd92c25c3f527a4fe1c4717"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__split__iterator.html#ga267dd63affd92c25c3f527a4fe1c4717">split_iterator__next</a> (<a class="el" href="structSplitIterator.html">SplitIterator</a> *iterator, <a class="el" href="io_8h.html#a54ad19f2d17915dbf4eb4c2fa2fa8680">String</a> *out_token)</td></tr>
+<tr class="memdesc:ga267dd63affd92c25c3f527a4fe1c4717"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method retrieves the next token found in the <a class="el" href="structSplitIterator.html" title="This is a type which captures state for a split iterator. A split iterator splits a String into compo...">SplitIterator</a>'s string field, and stores it in the provided String.  <a href="group__split__iterator.html#ga267dd63affd92c25c3f527a4fe1c4717">More...</a><br /></td></tr>
+<tr class="separator:ga267dd63affd92c25c3f527a4fe1c4717"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga881741127135e1062b5aebe23a69a29b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__split__iterator.html#ga881741127135e1062b5aebe23a69a29b">split_iterator__rest</a> (<a class="el" href="structSplitIterator.html">SplitIterator</a> *iterator, <a class="el" href="io_8h.html#a54ad19f2d17915dbf4eb4c2fa2fa8680">String</a> *out_rest)</td></tr>
+<tr class="memdesc:ga881741127135e1062b5aebe23a69a29b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method retrieves the portion of the <a class="el" href="structSplitIterator.html" title="This is a type which captures state for a split iterator. A split iterator splits a String into compo...">SplitIterator</a>'s <a class="el" href="group__string.html">String</a> field following the <a class="el" href="structSplitIterator.html" title="This is a type which captures state for a split iterator. A split iterator splits a String into compo...">SplitIterator</a>'s current position.  <a href="group__split__iterator.html#ga881741127135e1062b5aebe23a69a29b">More...</a><br /></td></tr>
+<tr class="separator:ga881741127135e1062b5aebe23a69a29b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->

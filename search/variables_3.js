@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['element_5fsize_167',['element_size',['../group__slice.html#ga47f70e894d1912ac46222d38d82045dc',1,'Slice']]]
+  ['free_141',['free',['../structAllocator.html#a77b5cc43c7317c8467d51fd7fdebe961',1,'Allocator']]]
 ];

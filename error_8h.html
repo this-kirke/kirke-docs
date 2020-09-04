@@ -96,34 +96,32 @@ $(document).ready(function(){initNavTree('error_8h.html',''); initResizable(); }
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">error.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;stdarg.h&gt;</code><br />
-<code>#include &quot;<a class="el" href="allocator_8h_source.html">kirke/allocator.h</a>&quot;</code><br />
+<code>#include &lt;stdbool.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="macros_8h_source.html">kirke/macros.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="slice_8h_source.html">kirke/slice.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="string_8h_source.html">kirke/string.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for error.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="error_8h__incl.png" border="0" usemap="#lib_2kirke_2include_2kirke_2error_8h" alt=""/></div>
 <map name="lib_2kirke_2include_2kirke_2error_8h" id="lib_2kirke_2include_2kirke_2error_8h">
-<area shape="rect" title=" " alt="" coords="74,5,235,47"/>
-<area shape="rect" title=" " alt="" coords="5,169,80,196"/>
-<area shape="rect" href="allocator_8h.html" title=" " alt="" coords="161,95,287,121"/>
-<area shape="rect" href="macros_8h.html" title=" " alt="" coords="165,169,283,196"/>
-<area shape="rect" href="slice_8h.html" title=" " alt="" coords="37,95,137,121"/>
-</map>
-</div>
-</div><div class="textblock"><div class="dynheader">
-This graph shows which files directly or indirectly include this file:</div>
-<div class="dyncontent">
-<div class="center"><img src="error_8h__dep__incl.png" border="0" usemap="#lib_2kirke_2include_2kirke_2error_8hdep" alt=""/></div>
-<map name="lib_2kirke_2include_2kirke_2error_8hdep" id="lib_2kirke_2include_2kirke_2error_8hdep">
-<area shape="rect" title=" " alt="" coords="5,5,167,47"/>
-<area shape="rect" href="log_8h.html" title=" " alt="" coords="5,95,167,136"/>
+<area shape="rect" title=" " alt="" coords="193,5,354,47"/>
+<area shape="rect" title=" " alt="" coords="5,319,80,345"/>
+<area shape="rect" title=" " alt="" coords="540,244,623,271"/>
+<area shape="rect" href="macros_8h.html" title=" " alt="" coords="291,319,410,345"/>
+<area shape="rect" href="string_8h.html" title=" " alt="" coords="340,95,447,121"/>
+<area shape="rect" href="array_8h.html" title=" " alt="" coords="342,169,445,196"/>
+<area shape="rect" href="allocator_8h.html" title=" " alt="" coords="261,244,387,271"/>
+<area shape="rect" href="log_8h.html" title=" " alt="" coords="95,244,185,271"/>
+<area shape="rect" href="math_8h.html" title=" " alt="" coords="412,244,516,271"/>
+<area shape="rect" title=" " alt="" coords="200,319,267,345"/>
+<area shape="rect" title=" " alt="" coords="105,319,175,345"/>
 </map>
 </div>
 </div>
@@ -132,21 +130,27 @@ This graph shows which files directly or indirectly include this file:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structError.html">Error</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A structure which represents a recoverable runtime error which was encountered.  <a href="structError.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a76ee1dc9907b0baa09a6ca1e15fe9a00"><td class="memItemLeft" align="right" valign="top">typedef typedefBEGIN_DECLARATIONS struct <a class="el" href="structAllocator.html">Allocator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="error_8h.html#a76ee1dc9907b0baa09a6ca1e15fe9a00">Allocator</a></td></tr>
+<tr class="separator:a76ee1dc9907b0baa09a6ca1e15fe9a00"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga6fb0c393764518b28a0f760df85822dd"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__error.html#ga6fb0c393764518b28a0f760df85822dd">error__equals</a> (<a class="el" href="structError.html">Error</a> *first, <a class="el" href="structError.html">Error</a> *second)</td></tr>
-<tr class="memdesc:ga6fb0c393764518b28a0f760df85822dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method compares two <a class="el" href="structError.html">Error</a> structures for equality.  <a href="group__error.html#ga6fb0c393764518b28a0f760df85822dd">More...</a><br /></td></tr>
-<tr class="separator:ga6fb0c393764518b28a0f760df85822dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga164e61c037c86a6b1df174e6a82cd57d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__error.html#ga164e61c037c86a6b1df174e6a82cd57d">error__equals</a> (<a class="el" href="structError.html">Error</a> *first, <a class="el" href="structError.html">Error</a> *second)</td></tr>
+<tr class="memdesc:ga164e61c037c86a6b1df174e6a82cd57d"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method compares two <a class="el" href="structError.html" title="A structure which represents a recoverable runtime error which was encountered.">Error</a> structures for equality.  <a href="group__error.html#ga164e61c037c86a6b1df174e6a82cd57d">More...</a><br /></td></tr>
+<tr class="separator:ga164e61c037c86a6b1df174e6a82cd57d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga229d7a7385c628ad6c69b7d05753cb6c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__error.html#ga229d7a7385c628ad6c69b7d05753cb6c">error__free</a> (<a class="el" href="structError.html">Error</a> *error)</td></tr>
-<tr class="memdesc:ga229d7a7385c628ad6c69b7d05753cb6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Releases memory used by an <a class="el" href="structError.html">Error</a> structure created with one of the error__new__ methods.  <a href="group__error.html#ga229d7a7385c628ad6c69b7d05753cb6c">More...</a><br /></td></tr>
+<tr class="memdesc:ga229d7a7385c628ad6c69b7d05753cb6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Releases memory used by an <a class="el" href="structError.html" title="A structure which represents a recoverable runtime error which was encountered.">Error</a> structure created with one of the error__new__ methods.  <a href="group__error.html#ga229d7a7385c628ad6c69b7d05753cb6c">More...</a><br /></td></tr>
 <tr class="separator:ga229d7a7385c628ad6c69b7d05753cb6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga7dba767c6b5f908498a84968470724f1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structError.html">Error</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__error.html#ga7dba767c6b5f908498a84968470724f1">error__new__format</a> (<a class="el" href="structAllocator.html">Allocator</a> *allocator, const char *type, unsigned long long code, const char *format,...)</td></tr>
-<tr class="memdesc:ga7dba767c6b5f908498a84968470724f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">A convenience method which creates a new <a class="el" href="structError.html">Error</a> structure, dynamically-allocated. The parameters <code>type</code> and <code>format</code> are not owned; their memory must be mananged by the caller. The purpose of this method is to allow <a class="el" href="structError.html">Error</a> creation with string literals and format strings.  <a href="group__error.html#ga7dba767c6b5f908498a84968470724f1">More...</a><br /></td></tr>
+<tr class="memdesc:ga7dba767c6b5f908498a84968470724f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">A convenience method which creates a new <a class="el" href="structError.html" title="A structure which represents a recoverable runtime error which was encountered.">Error</a> structure, dynamically-allocated. The parameters <code>type</code> and <code>format</code> are not owned; their memory must be mananged by the caller. The purpose of this method is to allow <a class="el" href="structError.html" title="A structure which represents a recoverable runtime error which was encountered.">Error</a> creation with string literals and format strings.  <a href="group__error.html#ga7dba767c6b5f908498a84968470724f1">More...</a><br /></td></tr>
 <tr class="separator:ga7dba767c6b5f908498a84968470724f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac511ab4e6b1c7d4b9ecfca188f7b9692"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structError.html">Error</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__error.html#gac511ab4e6b1c7d4b9ecfca188f7b9692">error__new__va_list</a> (<a class="el" href="structAllocator.html">Allocator</a> *allocator, const char *type, unsigned long long code, const char *format, va_list args)</td></tr>
-<tr class="memdesc:gac511ab4e6b1c7d4b9ecfca188f7b9692"><td class="mdescLeft">&#160;</td><td class="mdescRight">A convenience method which creates a new <a class="el" href="structError.html">Error</a> structure, dynamically-allocated. The parameters <code>type</code> and <code>format</code> are not owned; their memory must be mananged by the caller. The purpose of this method is to allow <a class="el" href="structError.html">Error</a> creation with string literals and a va_list for string replacement.  <a href="group__error.html#gac511ab4e6b1c7d4b9ecfca188f7b9692">More...</a><br /></td></tr>
+<tr class="memdesc:gac511ab4e6b1c7d4b9ecfca188f7b9692"><td class="mdescLeft">&#160;</td><td class="mdescRight">A convenience method which creates a new <a class="el" href="structError.html" title="A structure which represents a recoverable runtime error which was encountered.">Error</a> structure, dynamically-allocated. The parameters <code>type</code> and <code>format</code> are not owned; their memory must be mananged by the caller. The purpose of this method is to allow <a class="el" href="structError.html" title="A structure which represents a recoverable runtime error which was encountered.">Error</a> creation with string literals and a va_list for string replacement.  <a href="group__error.html#gac511ab4e6b1c7d4b9ecfca188f7b9692">More...</a><br /></td></tr>
 <tr class="separator:gac511ab4e6b1c7d4b9ecfca188f7b9692"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad5614f355c1afc97f4877a5948e6d34d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__error.html#gad5614f355c1afc97f4877a5948e6d34d">error__reset</a> (<a class="el" href="structError.html">Error</a> **error)</td></tr>
 <tr class="memdesc:gad5614f355c1afc97f4877a5948e6d34d"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method clears an existing message by freeing the pointed-to error, then setting it to NULL.  <a href="group__error.html#gad5614f355c1afc97f4877a5948e6d34d">More...</a><br /></td></tr>
@@ -155,6 +159,22 @@ Functions</h2></td></tr>
 <tr class="memdesc:ga3bcb3ae12b5c9b7d167860f154f7f5de"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method sets the type, code and message of an error at a given storage location.  <a href="group__error.html#ga3bcb3ae12b5c9b7d167860f154f7f5de">More...</a><br /></td></tr>
 <tr class="separator:ga3bcb3ae12b5c9b7d167860f154f7f5de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a id="a76ee1dc9907b0baa09a6ca1e15fe9a00"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76ee1dc9907b0baa09a6ca1e15fe9a00">&#9670;&nbsp;</a></span>Allocator</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef typedefBEGIN_DECLARATIONS struct <a class="el" href="structAllocator.html">Allocator</a> <a class="el" href="structAllocator.html">Allocator</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Forward declaration of <a class="el" href="structAllocator.html" title="Allocator is a simple vtable for functions which manage memory.">Allocator</a>, defined in <a class="el" href="allocator_8h.html">kirke/allocator.h</a> </p>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

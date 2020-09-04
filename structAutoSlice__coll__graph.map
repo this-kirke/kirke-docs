@@ -1,5 +1,0 @@
-<map id="AutoSlice" name="AutoSlice">
-<area shape="rect" id="node1" title="AutoSlice is a wrapper around the Slice structure, and provides automatic growth and memory managemen..." alt="" coords="49,95,132,121"/>
-<area shape="rect" id="node2" href="$structAllocator.html" title=" " alt="" coords="5,5,85,32"/>
-<area shape="rect" id="node3" href="$structSlice.html" title=" " alt="" coords="111,5,164,32"/>
-</map>

@@ -1,14 +1,20 @@
 var searchData=
 [
-  ['macros_60',['Macros',['../group__macros.html',1,'']]],
-  ['macros_2eh_61',['macros.h',['../macros_8h.html',1,'']]],
-  ['math_62',['Math',['../group__math.html',1,'']]],
-  ['math_2eh_63',['math.h',['../math_8h.html',1,'']]],
-  ['math_5f_5fmax_5f_5flong_64',['math__max__long',['../group__math.html#gae86c34fa0bdb482dfc70c3787083e9ea',1,'math__max__long(long first, long second):&#160;math.c'],['../group__math.html#gae86c34fa0bdb482dfc70c3787083e9ea',1,'math__max__long(long first, long second):&#160;math.c']]],
-  ['math_5f_5fmax_5f_5fulong_65',['math__max__ulong',['../group__math.html#gaa5755c271af79cb1022ce25b42d41442',1,'math__max__ulong(unsigned long first, unsigned long second):&#160;math.c'],['../group__math.html#gaa5755c271af79cb1022ce25b42d41442',1,'math__max__ulong(unsigned long first, unsigned long second):&#160;math.c']]],
-  ['math_5f_5fmax_5f_5fulonglong_66',['math__max__ulonglong',['../group__math.html#gaaebdf5a80a4d31f0b0b643fe9890e40c',1,'math__max__ulonglong(unsigned long long first, unsigned long long second):&#160;math.c'],['../group__math.html#gaaebdf5a80a4d31f0b0b643fe9890e40c',1,'math__max__ulonglong(unsigned long long first, unsigned long long second):&#160;math.c']]],
-  ['math_5f_5fmin_5f_5flong_67',['math__min__long',['../group__math.html#ga617f4cd45bbfb629ec87819d34aa4118',1,'math__min__long(long first, long second):&#160;math.c'],['../group__math.html#ga617f4cd45bbfb629ec87819d34aa4118',1,'math__min__long(long first, long second):&#160;math.c']]],
-  ['math_5f_5fmin_5f_5fulong_68',['math__min__ulong',['../group__math.html#ga0fd01d92af140ec7f3147c42c056b796',1,'math__min__ulong(unsigned long first, unsigned long second):&#160;math.c'],['../group__math.html#ga0fd01d92af140ec7f3147c42c056b796',1,'math__min__ulong(unsigned long first, unsigned long second):&#160;math.c']]],
-  ['math_5f_5fmin_5f_5fulonglong_69',['math__min__ulonglong',['../group__math.html#ga7235041bbfb1f49cde69b30a8e1e9305',1,'math__min__ulonglong(unsigned long long first, unsigned long long second):&#160;math.c'],['../group__math.html#ga7235041bbfb1f49cde69b30a8e1e9305',1,'math__min__ulonglong(unsigned long long first, unsigned long long second):&#160;math.c']]],
-  ['math_5f_5fnearest_5fgreater_5fpower_5fof_5f2_5f_5fulong_70',['math__nearest_greater_power_of_2__ulong',['../group__math.html#gae841602d22068691fbb7bcedcb3aaf1e',1,'math__nearest_greater_power_of_2__ulong(unsigned long value):&#160;math.c'],['../group__math.html#gae841602d22068691fbb7bcedcb3aaf1e',1,'math__nearest_greater_power_of_2__ulong(unsigned long value):&#160;math.c']]]
+  ['license_35',['License',['../license.html',1,'index']]],
+  ['log_36',['Log',['../group__log.html',1,'']]],
+  ['log_2eh_37',['log.h',['../log_8h.html',1,'']]],
+  ['log_5f_5fdebug_38',['log__debug',['../group__log.html#ga55213eb173654b72456434f59ec3db40',1,'log.h']]],
+  ['log_5f_5ferror_39',['log__error',['../group__log.html#ga1ced8135accd831ae0191a33e2d5120e',1,'log.h']]],
+  ['log_5f_5finfo_40',['log__info',['../group__log.html#ga7a83f93d4013e93399eb6e51b0a34df5',1,'log.h']]],
+  ['log_5f_5flevel_41',['Log__Level',['../group__log.html#gad557bc5915d8a3ccb046ebd386fa2e8e',1,'log.h']]],
+  ['log_5f_5flevel_5f_5fdebug_42',['Log__Level__Debug',['../group__log.html#ggad557bc5915d8a3ccb046ebd386fa2e8ea435ff08f4a322ab7da13558705894440',1,'log.h']]],
+  ['log_5f_5flevel_5f_5ferror_43',['Log__Level__Error',['../group__log.html#ggad557bc5915d8a3ccb046ebd386fa2e8eadbe0ac5b069d914e985d26af89c1174e',1,'log.h']]],
+  ['log_5f_5flevel_5f_5finfo_44',['Log__Level__Info',['../group__log.html#ggad557bc5915d8a3ccb046ebd386fa2e8ea5a09a7b2fcb93edd59da386ffaeca12f',1,'log.h']]],
+  ['log_5f_5flevel_5f_5fto_5fstring_45',['log__level__to_string',['../group__log.html#ga74c352fc780e98ff67362a23da17834a',1,'log__level__to_string(Log__Level log_level):&#160;log.c'],['../group__log.html#ga74c352fc780e98ff67362a23da17834a',1,'log__level__to_string(Log__Level log_level):&#160;log.c']]],
+  ['log_5f_5flevel_5f_5fverbose_46',['Log__Level__Verbose',['../group__log.html#ggad557bc5915d8a3ccb046ebd386fa2e8eafbded48431173a0af61b544f15c97275',1,'log.h']]],
+  ['log_5f_5flevel_5f_5fwarning_47',['Log__Level__Warning',['../group__log.html#ggad557bc5915d8a3ccb046ebd386fa2e8ea9c4aa7096b4cbfd49877e1456e531933',1,'log.h']]],
+  ['log_5f_5flog_48',['log__log',['../group__log.html#ga110d61829c86cf3089f1ffd764cd8daf',1,'log__log(Log__Level level, const char *file, int line, const char *format,...):&#160;log.c'],['../group__log.html#ga110d61829c86cf3089f1ffd764cd8daf',1,'log__log(Log__Level level, const char *file, int line, const char *format,...):&#160;log.c']]],
+  ['log_5f_5fset_5flog_5flevel_49',['log__set_log_level',['../group__log.html#ga309fb9f4194a2ce41975bf85730f372b',1,'log__set_log_level(Log__Level level):&#160;log.c'],['../group__log.html#ga309fb9f4194a2ce41975bf85730f372b',1,'log__set_log_level(Log__Level level):&#160;log.c']]],
+  ['log_5f_5fverbose_50',['log__verbose',['../group__log.html#gabce327c558b6f4510f27d92de74aa97a',1,'log.h']]],
+  ['log_5f_5fwarning_51',['log__warning',['../group__log.html#ga301a58019d3aed2df19538823ae1c58c',1,'log.h']]]
 ];

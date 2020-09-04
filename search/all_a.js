@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['position_73',['position',['../group__split__iterator.html#ga211b17992d6f33708aa5905c6d4399f2',1,'SplitIterator']]]
+  ['out_5fof_5fmemory_65',['out_of_memory',['../structAllocator.html#af02ff976d5aa6ff11561d74feb9e814b',1,'Allocator']]],
+  ['out_5fof_5fmemory_5fcallback_66',['out_of_memory_callback',['../structSystemAllocator.html#a249570ab1149c44a212c00f418dee3b6',1,'SystemAllocator']]]
 ];

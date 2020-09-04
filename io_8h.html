@@ -117,29 +117,58 @@ Include dependency graph for io.h:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a76ee1dc9907b0baa09a6ca1e15fe9a00"><td class="memItemLeft" align="right" valign="top"><a id="a76ee1dc9907b0baa09a6ca1e15fe9a00"></a>
-typedef typedefBEGIN_DECLARATIONS struct <a class="el" href="structAllocator.html">Allocator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Allocator</b></td></tr>
+<tr class="memitem:a76ee1dc9907b0baa09a6ca1e15fe9a00"><td class="memItemLeft" align="right" valign="top">typedef typedefBEGIN_DECLARATIONS struct <a class="el" href="structAllocator.html">Allocator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="io_8h.html#a76ee1dc9907b0baa09a6ca1e15fe9a00">Allocator</a></td></tr>
 <tr class="separator:a76ee1dc9907b0baa09a6ca1e15fe9a00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54ad19f2d17915dbf4eb4c2fa2fa8680"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="io_8h.html#a54ad19f2d17915dbf4eb4c2fa2fa8680">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="io_8h.html#a54ad19f2d17915dbf4eb4c2fa2fa8680">String</a></td></tr>
+<tr class="separator:a54ad19f2d17915dbf4eb4c2fa2fa8680"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
 <tr class="memitem:gaaf6053bd62e90ef9bce3563121345c4d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__io.html#gaaf6053bd62e90ef9bce3563121345c4d">IO__Error</a> { <a class="el" href="group__io.html#ggaaf6053bd62e90ef9bce3563121345c4dabe168a907fad535d639ef615c44d044d">IO__Error__UnableToOpenFile</a>
  }</td></tr>
-<tr class="memdesc:gaaf6053bd62e90ef9bce3563121345c4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">This enumerator defines possible <a class="el" href="structError.html">Error</a> types for IO functions.  <a href="group__io.html#gaaf6053bd62e90ef9bce3563121345c4d">More...</a><br /></td></tr>
+<tr class="memdesc:gaaf6053bd62e90ef9bce3563121345c4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">This enumerator defines possible <a class="el" href="structError.html" title="A structure which represents a recoverable runtime error which was encountered.">Error</a> types for IO functions.  <a href="group__io.html#gaaf6053bd62e90ef9bce3563121345c4d">More...</a><br /></td></tr>
 <tr class="separator:gaaf6053bd62e90ef9bce3563121345c4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga4f3e33574b80ac8017a55b8b97f04ac7"><td class="memItemLeft" align="right" valign="top">long long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__io.html#ga4f3e33574b80ac8017a55b8b97f04ac7">io__calculate_format_size</a> (const char *const format, va_list args)</td></tr>
-<tr class="memdesc:ga4f3e33574b80ac8017a55b8b97f04ac7"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method calculates the size in bytes of the resulting string after the format specifier and arguments have been evaluated.  <a href="group__io.html#ga4f3e33574b80ac8017a55b8b97f04ac7">More...</a><br /></td></tr>
-<tr class="separator:ga4f3e33574b80ac8017a55b8b97f04ac7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae7a4f53efd194f0255106b45ce4b0671"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structSlice.html">Slice</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__io.html#gae7a4f53efd194f0255106b45ce4b0671">io__read_file</a> (<a class="el" href="structAllocator.html">Allocator</a> *allocator, <a class="el" href="structSlice.html">Slice</a> *file_path, <a class="el" href="structError.html">Error</a> **error)</td></tr>
-<tr class="memdesc:gae7a4f53efd194f0255106b45ce4b0671"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method reads the contents of the file located at <code>file_path</code> into a newly-allocated <a class="el" href="structSlice.html">Slice</a>.  <a href="group__io.html#gae7a4f53efd194f0255106b45ce4b0671">More...</a><br /></td></tr>
-<tr class="separator:gae7a4f53efd194f0255106b45ce4b0671"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga82f28d39b0df55bf6a77ef62ec017ece"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structSlice.html">Slice</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__io.html#ga82f28d39b0df55bf6a77ef62ec017ece">io__read_stdin</a> (<a class="el" href="structAllocator.html">Allocator</a> *allocator)</td></tr>
-<tr class="memdesc:ga82f28d39b0df55bf6a77ef62ec017ece"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method reads the contents of stdin into a newly-allocated <a class="el" href="structSlice.html">Slice</a>.  <a href="group__io.html#ga82f28d39b0df55bf6a77ef62ec017ece">More...</a><br /></td></tr>
-<tr class="separator:ga82f28d39b0df55bf6a77ef62ec017ece"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa716673185457a07a5871e099591293d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="io_8h.html#a54ad19f2d17915dbf4eb4c2fa2fa8680">String</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__io.html#gaa716673185457a07a5871e099591293d">io__read_text_file</a> (<a class="el" href="structAllocator.html">Allocator</a> *allocator, <a class="el" href="io_8h.html#a54ad19f2d17915dbf4eb4c2fa2fa8680">String</a> *file_path, <a class="el" href="structError.html">Error</a> **error)</td></tr>
+<tr class="memdesc:gaa716673185457a07a5871e099591293d"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method reads the contents of the file located at <code>file_path</code> into a newly-allocated Slice.  <a href="group__io.html#gaa716673185457a07a5871e099591293d">More...</a><br /></td></tr>
+<tr class="separator:gaa716673185457a07a5871e099591293d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga04c52d339b81cb0f5fbcfe5404103433"><td class="memItemLeft" align="right" valign="top"><a class="el" href="io_8h.html#a54ad19f2d17915dbf4eb4c2fa2fa8680">String</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__io.html#ga04c52d339b81cb0f5fbcfe5404103433">io__read_stdin</a> (<a class="el" href="structAllocator.html">Allocator</a> *allocator)</td></tr>
+<tr class="memdesc:ga04c52d339b81cb0f5fbcfe5404103433"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method reads the contents of stdin into a newly-allocated String.  <a href="group__io.html#ga04c52d339b81cb0f5fbcfe5404103433">More...</a><br /></td></tr>
+<tr class="separator:ga04c52d339b81cb0f5fbcfe5404103433"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a id="a76ee1dc9907b0baa09a6ca1e15fe9a00"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76ee1dc9907b0baa09a6ca1e15fe9a00">&#9670;&nbsp;</a></span>Allocator</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef typedefBEGIN_DECLARATIONS struct <a class="el" href="structAllocator.html">Allocator</a> <a class="el" href="structAllocator.html">Allocator</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Forward declaration of <a class="el" href="structAllocator.html" title="Allocator is a simple vtable for functions which manage memory.">Allocator</a>, defined in <a class="el" href="allocator_8h.html">kirke/allocator.h</a> </p>
+
+</div>
+</div>
+<a id="a54ad19f2d17915dbf4eb4c2fa2fa8680"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54ad19f2d17915dbf4eb4c2fa2fa8680">&#9670;&nbsp;</a></span>String</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="io_8h.html#a54ad19f2d17915dbf4eb4c2fa2fa8680">String</a> <a class="el" href="io_8h.html#a54ad19f2d17915dbf4eb4c2fa2fa8680">String</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Forward declaration of String, defined in <a class="el" href="string_8h.html">kirke/string.h</a> </p>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

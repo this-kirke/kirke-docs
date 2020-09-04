@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['capacity_164',['capacity',['../group__slice.html#ga645bb2df2be09597f82bce0d9754f814',1,'Slice']]]
+  ['code_139',['code',['../structError.html#af4647ebddf3e68ddc53a10270ec0a813',1,'Error']]]
 ];

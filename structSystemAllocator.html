@@ -111,20 +111,51 @@ Collaboration diagram for SystemAllocator:</div>
 <div class="center"><img src="structSystemAllocator__coll__graph.png" border="0" usemap="#SystemAllocator_coll__map" alt="Collaboration graph"/></div>
 <map name="SystemAllocator_coll__map" id="SystemAllocator_coll__map">
 <area shape="rect" title="An allocator which uses the system&#39;s malloc, realloc and free methods. This allocator checks for out ..." alt="" coords="5,95,135,121"/>
-<area shape="rect" href="structAllocator.html" title=" " alt="" coords="30,5,110,32"/>
+<area shape="rect" href="structAllocator.html" title="Allocator is a simple vtable for functions which manage memory." alt="" coords="30,5,110,32"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:ga833f05a3680babaf68fe2a2fcc159498"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structAllocator.html">Allocator</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__system__allocator.html#ga833f05a3680babaf68fe2a2fcc159498">allocator</a></td></tr>
-<tr class="separator:ga833f05a3680babaf68fe2a2fcc159498"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga249570ab1149c44a212c00f418dee3b6"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__system__allocator.html#ga249570ab1149c44a212c00f418dee3b6">out_of_memory_callback</a> )(void)</td></tr>
-<tr class="separator:ga249570ab1149c44a212c00f418dee3b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a833f05a3680babaf68fe2a2fcc159498"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structAllocator.html">Allocator</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSystemAllocator.html#a833f05a3680babaf68fe2a2fcc159498">allocator</a></td></tr>
+<tr class="separator:a833f05a3680babaf68fe2a2fcc159498"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a249570ab1149c44a212c00f418dee3b6"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSystemAllocator.html#a249570ab1149c44a212c00f418dee3b6">out_of_memory_callback</a> )(void)</td></tr>
+<tr class="separator:a249570ab1149c44a212c00f418dee3b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>An allocator which uses the system's malloc, realloc and free methods. This allocator checks for out of memory errors (when malloc or realloc returns NULL), and calls an optional callback if this occurs. </p>
-</div><hr/>The documentation for this struct was generated from the following file:<ul>
+</div><h2 class="groupheader">Field Documentation</h2>
+<a id="a833f05a3680babaf68fe2a2fcc159498"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a833f05a3680babaf68fe2a2fcc159498">&#9670;&nbsp;</a></span>allocator</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structAllocator.html">Allocator</a>* SystemAllocator::allocator</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The initialzed allocator, which can be passed to any method requiring an allocator parameter. </p>
+
+</div>
+</div>
+<a id="a249570ab1149c44a212c00f418dee3b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a249570ab1149c44a212c00f418dee3b6">&#9670;&nbsp;</a></span>out_of_memory_callback</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void( * SystemAllocator::out_of_memory_callback) (void)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>An optional callback, specified in system_allocator__initialize, which will be called in case of out of memory errors. </p>
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following file:<ul>
 <li>lib/kirke/include/kirke/<a class="el" href="system__allocator_8h_source.html">system_allocator.h</a></li>
 </ul>
 </div><!-- contents -->

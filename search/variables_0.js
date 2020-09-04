@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['allocator_163',['allocator',['../group__auto__slice.html#ga2216d45d2157063e8bffc3b79db45899',1,'AutoSlice::allocator()'],['../group__system__allocator.html#ga833f05a3680babaf68fe2a2fcc159498',1,'SystemAllocator::allocator()']]]
+  ['alloc_136',['alloc',['../structAllocator.html#aa038ec805b46e97399e5d5096555ffa4',1,'Allocator']]],
+  ['allocator_137',['allocator',['../structError.html#a7b14f7b1e296f3354a4e685ab1b3125c',1,'Error::allocator()'],['../structSystemAllocator.html#a833f05a3680babaf68fe2a2fcc159498',1,'SystemAllocator::allocator()']]],
+  ['allocator_5fdata_138',['allocator_data',['../structAllocator.html#adf0a7cd4b8b3a099cec1a8f23a34a4c5',1,'Allocator']]]
 ];

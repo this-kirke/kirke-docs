@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['return_5fif_5ffail_74',['RETURN_IF_FAIL',['../group__macros.html#ga3f29201899b125efd69616c8b8aa0ebc',1,'macros.h']]],
-  ['return_5fvalue_5fif_5ffail_75',['RETURN_VALUE_IF_FAIL',['../group__macros.html#ga3de912d10d5f8677e054c7055829075e',1,'macros.h']]]
+  ['position_67',['position',['../structSplitIterator.html#a211b17992d6f33708aa5905c6d4399f2',1,'SplitIterator']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['out_5fof_5fmemory_5fcallback_72',['out_of_memory_callback',['../group__system__allocator.html#ga249570ab1149c44a212c00f418dee3b6',1,'SystemAllocator']]]
+  ['null_64',['NULL',['../group__macros.html#ga070d2ce7b6bb7e5c05602aa8c308d0c4',1,'macros.h']]]
 ];

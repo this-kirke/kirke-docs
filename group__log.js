@@ -12,12 +12,7 @@ var group__log =
       [ "Log__Level__Warning", "group__log.html#ggad557bc5915d8a3ccb046ebd386fa2e8ea9c4aa7096b4cbfd49877e1456e531933", null ],
       [ "Log__Level__Error", "group__log.html#ggad557bc5915d8a3ccb046ebd386fa2e8eadbe0ac5b069d914e985d26af89c1174e", null ]
     ] ],
-    [ "Log__Level__Debug", "group__log.html#ggad557bc5915d8a3ccb046ebd386fa2e8ea435ff08f4a322ab7da13558705894440", null ],
-    [ "Log__Level__Error", "group__log.html#ggad557bc5915d8a3ccb046ebd386fa2e8eadbe0ac5b069d914e985d26af89c1174e", null ],
-    [ "Log__Level__Info", "group__log.html#ggad557bc5915d8a3ccb046ebd386fa2e8ea5a09a7b2fcb93edd59da386ffaeca12f", null ],
-    [ "Log__Level__Verbose", "group__log.html#ggad557bc5915d8a3ccb046ebd386fa2e8eafbded48431173a0af61b544f15c97275", null ],
-    [ "Log__Level__Warning", "group__log.html#ggad557bc5915d8a3ccb046ebd386fa2e8ea9c4aa7096b4cbfd49877e1456e531933", null ],
-    [ "log__level__to_string", "group__log.html#ga11f807f7763b038ab0ff5a6c471e853f", null ],
+    [ "log__level__to_string", "group__log.html#ga74c352fc780e98ff67362a23da17834a", null ],
     [ "log__log", "group__log.html#ga110d61829c86cf3089f1ffd764cd8daf", null ],
     [ "log__set_log_level", "group__log.html#ga309fb9f4194a2ce41975bf85730f372b", null ]
 ];
