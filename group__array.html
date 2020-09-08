@@ -104,10 +104,10 @@ $(document).ready(function(){initNavTree('group__array.html',''); initResizable(
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:ga5ea7f6098d81e2c752219217209eed29"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__array.html#ga5ea7f6098d81e2c752219217209eed29">ARRAY__DECLARE</a>(TYPENAME,  TYPENAME_LOWERCASE,  ELEMENT_TYPE)</td></tr>
-<tr class="memdesc:ga5ea7f6098d81e2c752219217209eed29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declares a structure and interface methods for a Array type. This macro is generally be paired with a call to the macro <a class="el" href="group__array.html#gaf767830b6150165f283d6697b186117f" title="Defines interface methods for a Array type. This macro must be paired with a call to the macro ARRAY_...">ARRAY__DEFINE( TYPENAME, TYPENAME_LOWERCASE, ELEMENT_TYPE )</a>, which defines the implementations of interface methods declared herein.  <a href="group__array.html#ga5ea7f6098d81e2c752219217209eed29">More...</a><br /></td></tr>
+<tr class="memdesc:ga5ea7f6098d81e2c752219217209eed29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declares a structure and interface methods for a Array type. This macro should be paired with a call to the macro <a class="el" href="group__array.html#gaf767830b6150165f283d6697b186117f" title="Defines interface methods for a Array type. This macro must be paired with a call to the macro ARRAY_...">ARRAY__DEFINE( TYPENAME, TYPENAME_LOWERCASE, ELEMENT_TYPE )</a>, which defines the implementations of interface methods declared herein.  <a href="group__array.html#ga5ea7f6098d81e2c752219217209eed29">More...</a><br /></td></tr>
 <tr class="separator:ga5ea7f6098d81e2c752219217209eed29"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf767830b6150165f283d6697b186117f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__array.html#gaf767830b6150165f283d6697b186117f">ARRAY__DEFINE</a>(TYPENAME,  TYPENAME_LOWERCASE,  ELEMENT_TYPE,  ELEMENT_TYPE__EQUALS_FUNCTION)</td></tr>
-<tr class="memdesc:gaf767830b6150165f283d6697b186117f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines interface methods for a Array type. This macro must be paired with a call to the macro <a class="el" href="group__array.html#ga5ea7f6098d81e2c752219217209eed29" title="Declares a structure and interface methods for a Array type. This macro is generally be paired with a...">ARRAY__DECLARE( TYPENAME, TYPENAME_LOWERCASE, ELEMENT_TYPE )</a>.  <a href="group__array.html#gaf767830b6150165f283d6697b186117f">More...</a><br /></td></tr>
+<tr class="memdesc:gaf767830b6150165f283d6697b186117f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines interface methods for a Array type. This macro must be paired with a call to the macro <a class="el" href="group__array.html#ga5ea7f6098d81e2c752219217209eed29" title="Declares a structure and interface methods for a Array type. This macro should be paired with a call ...">ARRAY__DECLARE( TYPENAME, TYPENAME_LOWERCASE, ELEMENT_TYPE )</a>.  <a href="group__array.html#gaf767830b6150165f283d6697b186117f">More...</a><br /></td></tr>
 <tr class="separator:gaf767830b6150165f283d6697b186117f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -144,13 +144,12 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Declares a structure and interface methods for a Array type. This macro is generally be paired with a call to the macro <a class="el" href="group__array.html#gaf767830b6150165f283d6697b186117f" title="Defines interface methods for a Array type. This macro must be paired with a call to the macro ARRAY_...">ARRAY__DEFINE( TYPENAME, TYPENAME_LOWERCASE, ELEMENT_TYPE )</a>, which defines the implementations of interface methods declared herein. </p>
+<p>Declares a structure and interface methods for a Array type. This macro should be paired with a call to the macro <a class="el" href="group__array.html#gaf767830b6150165f283d6697b186117f" title="Defines interface methods for a Array type. This macro must be paired with a call to the macro ARRAY_...">ARRAY__DEFINE( TYPENAME, TYPENAME_LOWERCASE, ELEMENT_TYPE )</a>, which defines the implementations of interface methods declared herein. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">TYPENAME</td><td>The name which will be assigned to the structure type. </td></tr>
     <tr><td class="paramname">TYPENAME_LOWERCASE</td><td>Same as TYPENAME, only lowercase. This will be used to prefix interface methods, as well as to name local variables and parameters for the interface methods. </td></tr>
-    <tr><td class="paramname">ELEMENT_TYPE</td><td>The fully-qualified type which will be stored in the array. <br  />
- </td></tr>
+    <tr><td class="paramname">ELEMENT_TYPE</td><td>The fully-qualified type which will be stored in the array. </td></tr>
   </table>
   </dd>
 </dl>
@@ -195,14 +194,14 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Defines interface methods for a Array type. This macro must be paired with a call to the macro <a class="el" href="group__array.html#ga5ea7f6098d81e2c752219217209eed29" title="Declares a structure and interface methods for a Array type. This macro is generally be paired with a...">ARRAY__DECLARE( TYPENAME, TYPENAME_LOWERCASE, ELEMENT_TYPE )</a>. </p>
+<p>Defines interface methods for a Array type. This macro must be paired with a call to the macro <a class="el" href="group__array.html#ga5ea7f6098d81e2c752219217209eed29" title="Declares a structure and interface methods for a Array type. This macro should be paired with a call ...">ARRAY__DECLARE( TYPENAME, TYPENAME_LOWERCASE, ELEMENT_TYPE )</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">TYPENAME</td><td>The name which will was assigned to the structure type. </td></tr>
     <tr><td class="paramname">TYPENAME_LOWERCASE</td><td>Same as TYPENAME, only lowercase. This will be used to prefix interface methods, as well as to name local variables and parameters for the interface methods. </td></tr>
     <tr><td class="paramname">ELEMENT_TYPE</td><td>The fully-qualified type which will be stored in the array. <br  />
  </td></tr>
-    <tr><td class="paramname">ELEMENT_TYPE__EQUALS_FUNCTION</td><td>A function which will compare two ELEMENT_TYPEs, returning 1 if they are equal, and 0 otherwise. The signature should be bool METHOD_NAME( ELEMENT_TYPE, ELEMENT_TYPE ). This is used to implement the method bool TYPENAME_LOWERCASE ## __equals. The Array metaclass has no means of knowing what type of elements are contained within - they could be integral types, user-defined structures, or pointers to either. Users may also have different ideas about how these types should be compared for equality, as in address vs. field by field comparison. Allowing the user to supply an arbitrary equality comparison function yields the most utility and flexibility. </td></tr>
+    <tr><td class="paramname">ELEMENT_TYPE__EQUALS_FUNCTION</td><td>A function which will compare two ELEMENT_TYPEs, returning 1 if they are equal, and 0 otherwise. The signature should be bool METHOD_NAME( const *ELEMENT_TYPE, const *ELEMENT_TYPE ). This is used to implement the method bool TYPENAME_LOWERCASE ## __equals. The Array metaclass has no means of knowing what type of elements are contained within - they could be integral types, user-defined structures, or pointers to either. Users may also have different ideas about how these types should be compared for equality, as in address vs. field by field comparison. Allowing the user to supply an arbitrary equality comparison function yields the most utility and flexibility. </td></tr>
   </table>
   </dd>
 </dl>

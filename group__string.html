@@ -95,12 +95,19 @@ $(document).ready(function(){initNavTree('group__string.html',''); initResizable
 
 <div class="header">
   <div class="summary">
+<a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">String</div>  </div>
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:gae8c5d39054b8e6f64445fb51c294da8b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__string.html#gae8c5d39054b8e6f64445fb51c294da8b">string__literal</a>(TEXT)</td></tr>
+<tr class="memdesc:gae8c5d39054b8e6f64445fb51c294da8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This macro defines a String object containing the specified text.  <a href="group__string.html#gae8c5d39054b8e6f64445fb51c294da8b">More...</a><br /></td></tr>
+<tr class="separator:gae8c5d39054b8e6f64445fb51c294da8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ga40edffd546a3f573123e4ce3b7bf85ab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__string.html#ga40edffd546a3f573123e4ce3b7bf85ab">string__initialize__format</a> (<a class="el" href="io_8h.html#a54ad19f2d17915dbf4eb4c2fa2fa8680">String</a> *string, <a class="el" href="structAllocator.html">Allocator</a> *allocator, const char *format,...)</td></tr>
@@ -109,12 +116,149 @@ Functions</h2></td></tr>
 <tr class="memitem:gaab4d40d56d13e5fd7d1052c12c58f016"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__string.html#gaab4d40d56d13e5fd7d1052c12c58f016">string__initialize__va_list</a> (<a class="el" href="io_8h.html#a54ad19f2d17915dbf4eb4c2fa2fa8680">String</a> *string, <a class="el" href="structAllocator.html">Allocator</a> *allocator, const char *format, va_list args)</td></tr>
 <tr class="memdesc:gaab4d40d56d13e5fd7d1052c12c58f016"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method initializes a String using the provided format and variable arguments list. The provided <a class="el" href="structAllocator.html" title="Allocator is a simple vtable for functions which manage memory.">Allocator</a> is used to allocate new memory.  <a href="group__string.html#gaab4d40d56d13e5fd7d1052c12c58f016">More...</a><br /></td></tr>
 <tr class="separator:gaab4d40d56d13e5fd7d1052c12c58f016"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac0ed847a22cbc58e38ffcfbc79a4ef7e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="io_8h.html#a54ad19f2d17915dbf4eb4c2fa2fa8680">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__string.html#gac0ed847a22cbc58e38ffcfbc79a4ef7e">string__literal</a> (const char *text)</td></tr>
-<tr class="memdesc:gac0ed847a22cbc58e38ffcfbc79a4ef7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method creates a String object containing the specified text.  <a href="group__string.html#gac0ed847a22cbc58e38ffcfbc79a4ef7e">More...</a><br /></td></tr>
-<tr class="separator:gac0ed847a22cbc58e38ffcfbc79a4ef7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab11e3f6d1388c1e59bcd5bb7e18d681e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__string.html#gab11e3f6d1388c1e59bcd5bb7e18d681e">string__append__format</a> (<a class="el" href="io_8h.html#a54ad19f2d17915dbf4eb4c2fa2fa8680">String</a> *string, <a class="el" href="structAllocator.html">Allocator</a> *allocator, const char *format,...)</td></tr>
+<tr class="memdesc:gab11e3f6d1388c1e59bcd5bb7e18d681e"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method appends a formatted C-Style string to the end of a String.  <a href="group__string.html#gab11e3f6d1388c1e59bcd5bb7e18d681e">More...</a><br /></td></tr>
+<tr class="separator:gab11e3f6d1388c1e59bcd5bb7e18d681e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga64f772afed5e0b0df99c185392f60390"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__string.html#ga64f772afed5e0b0df99c185392f60390">string__append__va_list</a> (<a class="el" href="io_8h.html#a54ad19f2d17915dbf4eb4c2fa2fa8680">String</a> *string, <a class="el" href="structAllocator.html">Allocator</a> *allocator, const char *format, va_list args)</td></tr>
+<tr class="memdesc:ga64f772afed5e0b0df99c185392f60390"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method appends a formatted C-Style string to the end of a String.  <a href="group__string.html#ga64f772afed5e0b0df99c185392f60390">More...</a><br /></td></tr>
+<tr class="separator:ga64f772afed5e0b0df99c185392f60390"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="gae8c5d39054b8e6f64445fb51c294da8b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae8c5d39054b8e6f64445fb51c294da8b">&#9670;&nbsp;</a></span>string__literal</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define string__literal</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">TEXT</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">        {        \</div>
+<div class="line">        .data = (<span class="keywordtype">char</span>*) TEXT,           \</div>
+<div class="line">        .length = <span class="keyword">sizeof</span>( TEXT ) - 1,   \</div>
+<div class="line">        .capacity = <span class="keyword">sizeof</span>( TEXT ),     \</div>
+<div class="line">        .element_size = <span class="keyword">sizeof</span>( <span class="keywordtype">char</span> )  \</div>
+<div class="line">    }</div>
+</div><!-- fragment -->
+<p>This macro defines a String object containing the specified text. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">TEXT</td><td>A pointer to the an array of characters which will be contained by the defined String. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="gab11e3f6d1388c1e59bcd5bb7e18d681e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab11e3f6d1388c1e59bcd5bb7e18d681e">&#9670;&nbsp;</a></span>string__append__format()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void string__append__format </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="io_8h.html#a54ad19f2d17915dbf4eb4c2fa2fa8680">String</a> *&#160;</td>
+          <td class="paramname"><em>string</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structAllocator.html">Allocator</a> *&#160;</td>
+          <td class="paramname"><em>allocator</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>format</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This method appends a formatted C-Style string to the end of a String. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">string</td><td>A pointer to the String to which the format string will be appended. </td></tr>
+    <tr><td class="paramname">allocator</td><td>The allocator used to allocate memory for <code>string</code>, which will also be used to expand this memory if necessary. </td></tr>
+    <tr><td class="paramname">format</td><td>A null-terminated (C-style) string of characters, with optional format specifiers. Format specifiers are the same as those used for printf. If format specifiers are contained within <code>format</code>, then this parameter must be followed by a variable argument list of the corresponding variables. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga64f772afed5e0b0df99c185392f60390"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga64f772afed5e0b0df99c185392f60390">&#9670;&nbsp;</a></span>string__append__va_list()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void string__append__va_list </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="io_8h.html#a54ad19f2d17915dbf4eb4c2fa2fa8680">String</a> *&#160;</td>
+          <td class="paramname"><em>string</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structAllocator.html">Allocator</a> *&#160;</td>
+          <td class="paramname"><em>allocator</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>format</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">va_list&#160;</td>
+          <td class="paramname"><em>args</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This method appends a formatted C-Style string to the end of a String. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">string</td><td>A pointer to the String to which the format string will be appended. </td></tr>
+    <tr><td class="paramname">allocator</td><td>The allocator used to allocate memory for <code>string</code>, which will also be used to expand this memory if necessary. </td></tr>
+    <tr><td class="paramname">format</td><td>A null-terminated (C-style) string of characters, with optional format specifiers. Format specifiers are the same as those used for printf. </td></tr>
+    <tr><td class="paramname">args</td><td>If format specifiers are contained within <code>format</code>, then this parameter must contain the arguments which correspond to each specifier used. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ga40edffd546a3f573123e4ce3b7bf85ab"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga40edffd546a3f573123e4ce3b7bf85ab">&#9670;&nbsp;</a></span>string__initialize__format()</h2>
 
@@ -213,33 +357,6 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a id="gac0ed847a22cbc58e38ffcfbc79a4ef7e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac0ed847a22cbc58e38ffcfbc79a4ef7e">&#9670;&nbsp;</a></span>string__literal()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="io_8h.html#a54ad19f2d17915dbf4eb4c2fa2fa8680">String</a> string__literal </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>text</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>This method creates a String object containing the specified text. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">text</td><td>A pointer to the an array of characters which will be contained by the returned String. This array must be null-terminated. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section note"><dt>Note</dt><dd>If a stack-allocated string is passed as <code>text</code>, then the data contained within the returned string must not be modified. It is the user's responsibility to ensure this is followed; no string__ methods which modify the data should be called. </dd></dl>
 
 </div>
 </div>
