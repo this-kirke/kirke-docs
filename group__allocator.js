@@ -1,5 +1,9 @@
 var group__allocator =
 [
+    [ "<ins>About</ins>", "about.html#autotoc_md0", null ],
+    [ "<ins>Building</ins>", "about.html#autotoc_md1", null ],
+    [ "<ins>Usage</ins>", "about.html#autotoc_md2", null ],
+    [ "<ins>Testing</ins>", "about.html#autotoc_md3", null ],
     [ "Allocator", "group__allocator.html#ga76ee1dc9907b0baa09a6ca1e15fe9a00", null ],
     [ "allocator__alloc", "group__allocator.html#ga1f9b14ced7eda680ab101eabb23ace76", null ],
     [ "allocator__calloc", "group__allocator.html#gac112efc3c04aa57b566db3435f751eac", null ],

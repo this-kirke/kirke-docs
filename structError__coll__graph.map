@@ -1,4 +1,0 @@
-<map id="Error" name="Error">
-<area shape="rect" id="node1" title="A structure which represents a recoverable runtime error which was encountered." alt="" coords="19,95,72,121"/>
-<area shape="rect" id="node2" href="$structAllocator.html" title="Allocator is a simple vtable for functions which manage memory." alt="" coords="5,5,85,32"/>
-</map>
